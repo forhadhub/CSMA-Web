@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e8f84a7605.js" crossorigin="anonymous"></script>
+   
+    <!-- google font: poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- google font: tiro bangla -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <title>Cure SMA Bangladesh</title>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                colors: {
+                    'pColor': '#08A268',
+                    'yColor': '#FFD600',
+                    'rColor': '#ED1C24',
+                    'btnColor': '#C1E8D9',
+                    'bColor': '#222222',
+                },
+                fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'tiro-bangla': ['Tiro Bangla', 'serif'],
+                },
+            }
+          }
+        }
+    </script>
+
+    <!-- custom styles -->
+    <style>
+      /* primary button */
+      .pBtn {
+        font-family: 'poppins', 'sans-serif';
+        color: #222222;
+        background-color: #FFD600;
+        border-radius: 0.5rem; 
+        font-size: 1.25rem; 
+        padding: 8px 8px 8px 8px;
+        font-weight: 500;
+        transition: background-color 1s ease;
+    }
+    .pBtn:hover {
+      background-color: #08A268;
+      color: white;
+      box-shadow: box-shadow: 0px 0px 13px 0px rgba(255,214,0,1);
+                  -webkit-box-shadow: 0px 0px 13px 0px rgba(255,214,0,1);
+                  -moz-box-shadow: 0px 0px 13px 0px rgba(255,214,0,1);
+    }
+    .custom-hr {
+      border: 0;
+      height: 1px;
+      background: #08A268;
+      margin: 2px 0px 2px 0px; /* Adjust margin as needed */
+    }
+    .menu :where(li:not(.menu-title) > :not(ul,details,.menu-title,.btn)), .menu :where(li:not(.menu-title) > details > summary:not(.menu-title)){
+      padding-left:.75rem;
+      padding-right: .75rem;
+    }
+    .banner-bgw{
+      background: rgb(255,255,255);
+      background: linear-gradient(184deg, rgba(255,255,255,0.31976540616246496) 0%, rgba(255,255,255,0) 100%);
+    }
+
+      /* progress bar */
+      @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes progress-bar {
+      from { width: 0%; }
+      to { width: 50%; }
+    }
+
+    .fadein {
+      animation: fadein 4s;
+    }
+
+    .progress-bar-animation {
+      animation: progress-bar 2s ease forwards;
+    }
+
+    .bg-gradient-custom {
+      background: linear-gradient(to bottom, #1c314a, #27425f);
+    }
+    </style>
+
+</head>
+
+<body class="max-w-[1440px] mx-auto bg_image font-poppins selection:bg-yColor/40 selection:text-pColor ">
+  <header class="sticky top-0 z-[9999]">
+    <!-- top header section-->
+    <div class="flex md:flex lg:flex-row justify-between md:justify-between md:h-12 items-center bg-pColor px-2 md:px-8 lg:px-8">
+      <div class="flex justify-center text-lg text-center ml-6 md:ml-5 lg:ml-0">
+        <a class="text-decoration-none pr-4 md:pr-10 text-white hover:text-yColor" href="mailto:info@curesmabangladesh.org">
+          <i class="fas fa-envelope"></i> 
+          <span class="hidden lg:inline">&nbsp;info@curesmabangladesh.org</span>
+        </a>
+        <a class="flex-1 text-decoration-none text-white hover:text-yColor" href="tel:+8801841118486">
+          <i class="fas fa-phone"></i> 
+          <span class="hidden md:inline">&nbsp;+88 0184 111 84 86</span>
+        </a>
+      </div>
+      <div class="flex justify-center text-base text-center items-center md:mt-0">
+        <!-- Uncomment this line if needed for Google Translate -->
+        <!-- <div id="google_translate_element"></div> -->
+        <a class="flex text-decoration-none text-white border-x-2 p-2 md:p-3" href="#">Language</a>
+        <a class="flex text-decoration-none text-white p-2 md:p-3 hover:text-yColor" href="blog.html">Blog</a>
+        <a class="flex text-decoration-none text-white border-x-2 p-2 md:p-3 hover:text-yColor" href="member_registration.html">Registration</a>
+            
+        <i class="fa-solid fa-hand-holding-medical text-white text-3xl pl-2 md:pl-3"></i>
+      </div>
+    </div>
+
+    <!-- navbar section-->
+    <nav>
+      <div class="flex flex-row justify-between bg-lime-200 py-0 lg:px-8 md:px-8 font-poppins text-pfont font-medium text-base shadow-lg shadow-white/40 navbar bg-pblack bg-opacity-55">
+        <div class="">
+          <!-- mobile menu -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-lime-200 rounded-box w-80 bg-pblack bg-opacity-55 border-r-2 border-pred shadow-lg shadow-pColor/40">
+              <li><a href="home.html" class="hover:text-pColor">Home</a></li>
+              <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
+                <a href="#" class="hover:text-pColor">About <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About SMA</a></li>
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About Cure SMA Bangladesh</a></li>
+                  <li><a href="#" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Executive Committee</a></li>
+                </ul>
+              </li>
+              <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
+                <a href="#" class="hover:text-pColor">Health Care Team <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Dr. Mizanur Rahman</a></li>
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  - - - - - - - - - -</a></li>
+                </ul>
+              </li>
+              <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
+                <a href="#" class="hover:text-pColor">Care <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  General Care Guideline</a></li>
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Care for Winter Season</a></li>
+                  <li><a href="#" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Nutrition</a></li>
+                </ul>
+              </li>
+              <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
+                <a href="#" class="hover:text-pColor">Support <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg">
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Multidisciplinary Clinic</a></li>
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About multidisciplinary Clinic</a></li>
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Address of multidisciplinary Clinic</a></li>
+                  <li><a href="#" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Picture of multidisciplinary Clinic</a></li>
+                  <li><a href="#" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Conference/Meetings</a></li>
+                  <li><a href="#" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Awareness Activities</a></li>
+                </ul>
+              </li>
+              <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
+                <a href="#" class="hover:text-pColor">Gallery <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Photos</a></li>
+                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Videos</a></li>
+                </ul>
+              </li>
+              <li class="relative group hover:translate-y-1 hover:duration-[2s] "><a href="contact.html" class="hover:text-pColor">Contact </a></li>
+            </ul>
+          </div>
+        <!-- site logo -->
+          <div>
+            <a href="#">
+              <img class="w-24 md:max-w-32" src="./src/images/logo_CSMA.png" alt="CSMA-Logo">
+            </a>
+          </div>  
+        </div>
+        <!-- large display menu -->
+        <div class="navbar-center hidden lg:flex font-poppins px-5">
+          <ul class="flex space-x-4 px-1 lg:text-base gap-6 lg:gap-0 xl:gap-6">
+            <li><a href="home.html" class="hover:text-pColor">Home</a></li>
+            <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
+              <a href="#" class="hover:text-pColor">About <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About SMA</a></li>
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About Cure SMA Bangladesh</a></li>
+                <li><a href="#" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Executive Committee</a></li>
+              </ul>
+            </li>
+            <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
+              <a href="#" class="hover:text-pColor">Health Care Team <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Dr. Mizanur Rahman</a></li>
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  - - - - - - - - - -</a></li>
+              </ul>
+            </li>
+            <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
+              <a href="#" class="hover:text-pColor">Care <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  General Care Guideline</a></li>
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Care for Winter Season</a></li>
+                <li><a href="#" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Nutrition</a></li>
+              </ul>
+            </li>
+            <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
+              <a href="#" class="hover:text-pColor">Support <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg">
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Multidisciplinary Clinic</a></li>
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About multidisciplinary Clinic</a></li>
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Address of multidisciplinary Clinic</a></li>
+                <li><a href="#" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Picture of multidisciplinary Clinic</a></li>
+                <li><a href="#" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Conference/Meetings</a></li>
+                <li><a href="#" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Awareness Activities</a></li>
+              </ul>
+            </li>
+            <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
+              <a href="#" class="hover:text-pColor">Gallery <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Photos</a></li>
+                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Videos</a></li>
+              </ul>
+            </li>
+            <li class="relative group hover:translate-y-1 hover:duration-[2s] "><a href="contact.html" class="hover:text-pColor">Contact </a></li>
+          </ul>
+        </div>
+        <!-- button -->
+        <div class="flex gap-4 lg:gap-1 xl:gap-4 2xl:gap-4">
+            <div>
+              <a class="pBtn text-sm md:text-xl" href="member_registration.html"><i class="fa-solid fa-box"></i> <span class="hidden md:inline lg:hidden xl:inline">Patient</span> <span class="inline lg:hidden xl:inline">Registration</span></a>
+            </div>
+            <div>
+              <a class="pBtn bg-rColor text-white " href="#" onclick="Gdonate_modal.showModal()"><i class="fa-solid fa-heart-circle-check"></i> <span class="text-base md:text-xl hidden md:inline lg:hidden xl:inline">Donate</span></a>
+            </div>
+            <!-- modal form -->
+            <dialog id="Gdonate_modal" class="modal">
+              <div class="modal-box bg-slate-200 max-w-full md:max-w-4xl lg:max-w-3xl p-6 mx-auto">
+                <form method="dialog">
+                  <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+                <div class="bg-white p-6 border-4 border-pColor rounded-lg">
+                  <div class="max-w-full flex justify-center mb-4">
+                    <img src="./src/images/logo_CSMA.png" alt="CSMA Logo" class="w-24 h-auto">
+                  </div>
+                  <h3 class="text-xl pt-3 text-green-600 text-center font-bold">GENERAL DONATION FORM</h3>
+                  <p class="text-center font-bold mb-5">Thank you for donating to our cause</p>
+            
+                  <div id="Gdonateform">
+                    <form method="post" action="/submit-donation">
+                      <div class="flex flex-col gap-4">
+                        <div class="flex flex-col md:flex-row md:gap-4">
+                          <div class="flex-1">
+                            <label for="Gdonateform_firstname" class="label text-sm">First Name</label>
+                            <input id="Gdonateform_firstname" type="text" placeholder="First Name" required class="input border-2 border-green-400 w-full">
+                          </div>
+            
+                          <div class="flex-1 mt-4 md:mt-0">
+                            <label for="Gdonateform_lastname" class="label text-sm">Last Name</label>
+                            <input id="Gdonateform_lastname" type="text" placeholder="Last Name" required class="input border-2 border-green-400 w-full">
+                          </div>
+                        </div>
+            
+                        <div class="flex flex-col md:flex-row md:gap-4">
+                          <div class="flex-1">
+                            <label for="Gdonateform_contactno" class="label text-sm">Contact Number</label>
+                            <input id="Gdonateform_contactno" type="tel" placeholder="+88 01234-567890" required class="input border-2 border-green-400 w-full">
+                          </div>
+            
+                          <div class="flex-1 mt-4 md:mt-0">
+                            <label for="Gdonateform_email" class="label text-sm">Email</label>
+                            <input id="Gdonateform_email" type="email" placeholder="address@email.com" required class="input border-2 border-green-400 w-full">
+                          </div>
+                        </div>
+            
+                        <div>
+                          <label for="Gdonateform_amount" class="label text-sm">How much do you want to donate?</label>
+                          <div class="flex flex-col md:flex-row">
+                            <select id="Gdonateform_amount" required class="input border-2 border-r-0 rounded-r-none border-green-400 md:w-1/3">
+                              <option value="">Select</option>
+                              <option value="usd">$ USD</option>
+                              <option value="bdt">৳ BDT</option>
+                            </select>
+                            <input id="Gdonateform_amount" type="text" placeholder="Donate Amount" required class="input border-2 border-l-0 rounded-l-none border-green-400 md:w-2/3 mt-2 md:mt-0">
+                          </div>
+                        </div>
+            
+                        <div>
+                          <label for="Gdonateform_address" class="label text-sm">Address</label>
+                          <input id="Gdonateform_address" type="text" placeholder="Address line 1" required class="input border-2 border-green-400 w-full">
+                          <input id="Gdonateform_address" type="text" placeholder="Address line 2" class="input border-2 border-green-400 w-full mt-2">
+                        </div>
+            
+                        <div>
+                          <label for="Gdonateform_purpose" class="label text-sm">Purpose of Donation</label>
+                          <input id="Gdonateform_purpose" type="text" placeholder="Purpose of Donation" class="input border-2 border-green-400 w-full">
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row gap-4 font-bold">
+                          <a href="#" class="text-sm text-blue-800 underline">Privacy Policy</a>
+                          <a href="#" class="text-sm text-blue-800 underline">Data Protection Statement</a>
+                        </div>
+            
+                        <div><h1 class="text-center mt-4">Captcha</h1></div>
+                        <div class="flex items-center mt-2">
+                          <input type="checkbox" id="Gdonateform_agree" name="Gdonateform_agree" required value="agree" class="mr-2">
+                          <label for="Gdonateform_agree" class="text-sm">I agree to make a donation, and proceed to pay.</label>
+                        </div>
+            
+                        <div class="text-center mt-4">
+                          <input type="submit" class="pBtn bg-pColor text-white hover:bg-yColor hover:text-pColor" value="Donation Submit">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </dialog>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner Section -->
+    <div class="bg-[#F2F2F3] px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="text-center md:text-left mb-8 md:mb-0 md:w-1/2">
+          <h1 class="text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
+            CURE SMA <br>BANGLADESH
+          </h1>
+          <h4 class="text-lg xl:text-xl mt-3">
+            A REGISTERED PUBLIC CHARITABLE FOUNDATION
+          </h4>
+        </div>
+
+        <div class="md:w-1/2">
+          <img class="w-full h-auto" src="./src/images/donate-banner.png" alt="Donate Banner">
+        </div>
+      </div>
+    </div>
+  
+   <!-- sponsor a child today -->
+   <div class="px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center">
+    <div class="text-center md:text-left mb-6 md:mb-0 md:w-1/2">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-normal">
+        Show you Care. <br> Change lives.
+      </h1>
+    </div>
+    <button class="bg-[#DB3CB3] px-4 py-2 md:px-5 md:py-3 text-white rounded-xl hover:bg-pColor hover:shadow-lg hover:shadow-yellow-500 hover:translate-y-1 transition-transform duration-500">
+      <a class="text-lg md:text-xl lg:text-3xl xl:text-4xl leading-normal flex items-center" href="#child_Section">
+        Sponsor a child today <i class="fa-solid fa-right-long ml-2"></i>
+      </a>
+    </button>
+   </div>
+  
+   <!-- card section -->
+   <div id="child_Section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 px-8 mb-20 bg-[#F2F2F3] py-10">
+    <div>
+      <div>
+        <img class="rounded-xl" src="./src/images/Nabonee.jpg" alt="Nabonee" />
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold py-2">Nabonee</h2>
+        <p class="text-justify pb-4">Little angel OLIVIA SANCHAREE NABONEE suffering from SMA needs support to continue her treatment <a class="text-red-600 px-2 py-1 bg-red-200 rounded-md hover:shadow-sm hover:shadow-red-600" href="#">See More</a> </p>
+        <div class="pb-4">
+          <h4 class="font-semibold pb-1 text-base">Annual cost: <span>1700$</span></h4>
+          <h4 class="font-semibold pb-1 text-base">Total Collection: <span>105$</span><span>(Tk. 17000)</span></h4>
+        </div>
+      </div>
+      
+      <!-- progress bar -->
+      <div class="flex items-center justify-center">
+        <div class="relative w-full h-8 mb-4 mx-auto rounded-lg border-2 border-red-400 shadow-inner text-center">
+          <div class="absolute top-0 left-0 h-full rounded-lg bg-pColor progress-bar-animation">
+            <!-- Progress Bar -->
+            <h3 class="absolute inset-0 flex items-center justify-center text-white text-base font-semibold fadein">
+              $50,000
+            </h3>
+          </div>
+      
+          <!-- Goal Text -->
+          <h3 class="absolute right-0 top-0 bottom-0 flex items-center justify-center text-pColor text-base font-semibold">
+            $100,000
+          </h3>
+        </div>
+      </div>
+  
+      <div>
+          <button class="btn btn-wide text-2xl bg-orange-600 text-white w-full hover:bg-pColor hover:shadow-md hover:shadow-black hover:translate-y-1 hover:duration-[.5s]" onclick="SCdonate_modal.showModal()">Donate</button>
+      </div>
+      <!-- Selected child donation modal -->
+      <dialog id="SCdonate_modal" class="modal">
+        <div class="modal-box bg-slate-200 max-w-full md:max-w-4xl lg:max-w-3xl p-6 mx-auto">
+          <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+          </form>
+          <div class="bg-white p-6 border-4 border-orange-600 rounded-lg">
+            <div class="max-w-full flex justify-center mb-4">
+              <img src="./src/images/logo_CSMA.png" alt="CSMA Logo" class="w-24 h-auto">
+            </div>
+            <h3 class="text-xl pt-3 text-orange-600 text-center font-bold">SELECTED CHILD DONATION FORM</h3>
+            <p class="text-center font-bold mb-5">Thank you for donating to our cause</p>
+      
+            <div id="Gdonateform">
+              <form method="post" action="/submit-donation">
+                <div class="flex flex-col gap-4">
+                  <div class="flex flex-col md:flex-row md:gap-4">
+                    <div class="flex-1">
+                      <label for="Gdonateform_firstname" class="label text-sm">First Name</label>
+                      <input id="Gdonateform_firstname" type="text" placeholder="First Name" required class="input border-2 border-orange-600 w-full">
+                    </div>
+      
+                    <div class="flex-1 mt-4 md:mt-0">
+                      <label for="Gdonateform_lastname" class="label text-sm">Last Name</label>
+                      <input id="Gdonateform_lastname" type="text" placeholder="Last Name" required class="input border-2 border-orange-600 w-full">
+                    </div>
+                  </div>
+      
+                  <div class="flex flex-col md:flex-row md:gap-4">
+                    <div class="flex-1">
+                      <label for="Gdonateform_contactno" class="label text-sm">Contact Number</label>
+                      <input id="Gdonateform_contactno" type="tel" placeholder="+88 01234-567890" required class="input border-2 border-orange-600 w-full">
+                    </div>
+      
+                    <div class="flex-1 mt-4 md:mt-0">
+                      <label for="Gdonateform_email" class="label text-sm">Email</label>
+                      <input id="Gdonateform_email" type="email" placeholder="address@email.com" required class="input border-2 border-orange-600 w-full">
+                    </div>
+                  </div>
+      
+                  <div>
+                    <label for="Gdonateform_amount" class="label text-sm">How much do you want to donate?</label>
+                    <div class="flex flex-col md:flex-row">
+                      <select id="Gdonateform_amount" required class="input border-2 border-r-0 rounded-r-none border-orange-600 md:w-1/3">
+                        <option value="">Select</option>
+                        <option value="usd">$ USD</option>
+                        <option value="bdt">৳ BDT</option>
+                      </select>
+                      <input id="Gdonateform_amount" type="text" placeholder="Donate Amount" required class="input border-2 border-l-0 rounded-l-none border-orange-600 md:w-2/3 mt-2 md:mt-0">
+                    </div>
+                  </div>
+      
+                  <div>
+                    <label for="Gdonateform_address" class="label text-sm">Address</label>
+                    <input id="Gdonateform_address" type="text" placeholder="Address line 1" required class="input border-2 border-orange-600 w-full">
+                    <input id="Gdonateform_address" type="text" placeholder="Address line 2" class="input border-2 border-orange-600 w-full mt-2">
+                  </div>
+      
+                  <div>
+                    <label for="Gdonateform_purpose" class="label text-sm">Purpose of Donation</label>
+                    <input id="Gdonateform_purpose" type="text" placeholder="Purpose of Donation" class="input border-2 border-orange-600 w-full">
+                  </div>
+                  
+                  <div class="flex flex-col md:flex-row gap-4 font-bold">
+                    <a href="#" class="text-sm text-blue-800 underline">Privacy Policy</a>
+                    <a href="#" class="text-sm text-blue-800 underline">Data Protection Statement</a>
+                  </div>
+      
+                  <div><h1 class="text-center mt-4">Captcha</h1></div>
+                  <div class="flex items-center mt-2">
+                    <input type="checkbox" id="Gdonateform_agree" name="Gdonateform_agree" required value="agree" class="mr-2">
+                    <label for="Gdonateform_agree" class="text-sm">I agree to make a donation, and proceed to pay.</label>
+                  </div>
+      
+                  <div class="text-center mt-4">
+                    <input type="submit" class="pBtn bg-orange-600 text-white" value="Donation Submit">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </div>
+  
+  
+    <div>
+      <div>
+        <img class="rounded-xl" src="./src/images/Nabonee.jpg" alt="Nabonee" />
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold py-2">Nabonee</h2>
+        <p class="text-justify pb-4">Little angel OLIVIA SANCHAREE NABONEE suffering from SMA needs support to continue her treatment <a class="text-red-600 px-2 py-1 bg-red-200 rounded-md hover:shadow-sm hover:shadow-red-600" href="#">See More</a> </p>
+        <div class="pb-4">
+          <h4 class="font-semibold pb-1 text-base">Annual cost: <span>1700$</span></h4>
+          <h4 class="font-semibold pb-1 text-base">Total Collection: <span>105$</span><span>(Tk. 17000)</span></h4>
+        </div>
+      </div>
+      
+      <!-- progress bar -->
+      <div class="flex items-center justify-center">
+        <div class="relative w-full h-8 mb-4 mx-auto rounded-lg border-2 border-red-400 shadow-inner text-center">
+          <div class="absolute top-0 left-0 h-full rounded-lg bg-pColor progress-bar-animation">
+            <!-- Progress Bar -->
+            <h3 class="absolute inset-0 flex items-center justify-center text-white text-base font-semibold fadein">
+              $50,000
+            </h3>
+          </div>
+      
+          <!-- Goal Text -->
+          <h3 class="absolute right-0 top-0 bottom-0 flex items-center justify-center text-pColor text-base font-semibold">
+            $100,000
+          </h3>
+        </div>
+      </div>
+      <div>
+          <button class="btn btn-wide text-2xl bg-orange-600 text-white w-full hover:bg-pColor hover:shadow-md hover:shadow-black hover:translate-y-1 hover:duration-[.5s]" onclick="SCdonate_modal.showModal()">Donate</button>
+      </div>
+    </div>
+  
+  
+    <div>
+      <div>
+        <img class="rounded-xl" src="./src/images/Nabonee.jpg" alt="Nabonee" />
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold py-2">Nabonee</h2>
+        <p class="text-justify pb-4">Little angel OLIVIA SANCHAREE NABONEE suffering from SMA needs support to continue her treatment <a class="text-red-600 px-2 py-1 bg-red-200 rounded-md hover:shadow-sm hover:shadow-red-600" href="#">See More</a> </p>
+        <div class="pb-4">
+          <h4 class="font-semibold pb-1 text-base">Annual cost: <span>1700$</span></h4>
+          <h4 class="font-semibold pb-1 text-base">Total Collection: <span>105$</span><span>(Tk. 17000)</span></h4>
+        </div>
+      </div>
+      
+      <!-- progress bar -->
+      <div class="flex items-center justify-center">
+        <div class="relative w-full h-8 mb-4 mx-auto rounded-lg border-2 border-red-400 shadow-inner text-center">
+          <div class="absolute top-0 left-0 h-full rounded-lg bg-pColor progress-bar-animation">
+            <!-- Progress Bar -->
+            <h3 class="absolute inset-0 flex items-center justify-center text-white text-base font-semibold fadein">
+              $50,000
+            </h3>
+          </div>
+      
+          <!-- Goal Text -->
+          <h3 class="absolute right-0 top-0 bottom-0 flex items-center justify-center text-pColor text-base font-semibold">
+            $100,000
+          </h3>
+        </div>
+      </div>
+  
+      <div>
+          <button class="btn btn-wide text-2xl bg-orange-600 text-white w-full hover:bg-pColor hover:shadow-md hover:shadow-black hover:translate-y-1 hover:duration-[.5s]" onclick="SCdonate_modal.showModal()">Donate</button>
+      </div>
+    </div>
+  
+  
+    <div>
+      <div>
+        <img class="rounded-xl" src="./src/images/Nabonee.jpg" alt="Nabonee" />
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold py-2">Nabonee</h2>
+        <p class="text-justify pb-4">Little angel OLIVIA SANCHAREE NABONEE suffering from SMA needs support to continue her treatment <a class="text-red-600 px-2 py-1 bg-red-200 rounded-md hover:shadow-sm hover:shadow-red-600" href="#">See More</a> </p>
+        <div class="pb-4">
+          <h4 class="font-semibold pb-1 text-base">Annual cost: <span>1700$</span></h4>
+          <h4 class="font-semibold pb-1 text-base">Total Collection: <span>105$</span><span>(Tk. 17000)</span></h4>
+        </div>
+      </div>
+      
+      <!-- progress bar -->
+      <div class="flex items-center justify-center">
+        <div class="relative w-full h-8 mb-4 mx-auto rounded-lg border-2 border-red-400 shadow-inner text-center">
+          <div class="absolute top-0 left-0 h-full rounded-lg bg-pColor progress-bar-animation">
+            <!-- Progress Bar -->
+            <h3 class="absolute inset-0 flex items-center justify-center text-white text-base font-semibold fadein">
+              $50,000
+            </h3>
+          </div>
+      
+          <!-- Goal Text -->
+          <h3 class="absolute right-0 top-0 bottom-0 flex items-center justify-center text-pColor text-base font-semibold">
+            $100,000
+          </h3>
+        </div>
+      </div>
+  
+      <div>
+          <button class="btn btn-wide text-2xl bg-orange-600 text-white w-full hover:bg-pColor hover:shadow-md hover:shadow-black hover:translate-y-1 hover:duration-[.5s]" onclick="SCdonate_modal.showModal()">Donate</button>
+      </div>
+    </div>
+   </div>
+
+   <!-- Why Donate Section -->
+   <div class="bg-[#F2F2F3] mb-20 px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="md:w-7/12 mb-8 md:mb-0">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-8xl font-extrabold leading-snug">
+          Why Donate?
+        </h1>
+        <h4 class="text-xl md:text-2xl mt-3 leading-relaxed">
+          Our spinal muscular atrophy (SMA) community has made great progress, but our work is not over! Through your generous donations, we can fund the treatment of SMA babies. Your philanthropy powers our mission.
+        </h4>
+      </div>
+      
+      <div class="md:w-5/12 flex justify-center">
+        <img class="w-full h-auto py-4 md:py-8" src="./src/images/why_donate.png" alt="Why Donate">
+      </div>
+    </div>
+   </div>
+
+   <!-- support section -->
+   <div id="support" class="bg-stone-700 px-4 py-8 text-center mb-8 md:px-8 md:py-16 md:mb-20">
+    <h1 class="text-white text-4xl md:text-6xl font-bold leading-normal mb-8 md:mb-16">Community Support</h1>
+    <div class="flex flex-col gap-4 px-4 md:px-8 lg:px-16">
+      <button class="bg-white px-4 py-3 rounded-xl mb-4 hover:text-white hover:shadow-yellow-400 hover:shadow-lg hover:bg-pColor hover:translate-y-1 hover:duration-[.5s]">
+        <a class="text-2xl md:text-4xl leading-normal" href="#">Register a Patient</a>
+      </button>
+      <button class="bg-white px-4 py-3 rounded-xl hover:text-white hover:shadow-white hover:shadow-lg hover:bg-cyan-500 hover:translate-y-1 hover:duration-[.5s]">
+        <a class="text-2xl md:text-4xl leading-normal" href="#"><span class="font-bold underline">Download</span><br>SMA Awareness Material</a>
+      </button>
+    </div>
+  </div>
+
+   <!-- Your money at Work section -->
+   <div class="bg-[#F2F2F3] mb-8 md:mb-16 lg:mb-20">
+      <div class="flex flex-col md:flex-row justify-between items-center mx-4 md:mx-8">
+        <div class="w-full md:w-6/12">
+          <img class="w-full h-auto py-4 md:py-8" src="./src/images/donate_at_work.png" alt="Donate at Work">
+        </div>
+        <div class="w-full md:w-7/12 lg:pl-8 py-4 md:py-8 text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-normal">
+            Your Money <br class="hidden md:block"> at Work
+          </h1>
+          <h4 class="text-base md:text-lg lg:text-xl xl:text-2xl mt-2 md:mt-3 leading-normal">
+            Your donations are felt at every level of our organization and have a real-world impact on our SMA community. 90% of every taka donated is spent on the treatment of these babies. The rest goes to
+            <a class="text-lg md:text-xl lg:text-2xl underline text-orange-600 font-bold hover:text-pColor" href="#support">Community Support</a> and
+            <a class="text-lg md:text-xl lg:text-2xl underline text-cyan-500 font-bold hover:text-pColor" href="#support">SMA Awareness</a> in Bangladesh.
+          </h4>
+        </div>
+      </div>
+   </div>
+  
+  <!-- path to change section -->
+  <div class="bg-green-950 text-white mb-20 px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <!-- Left Content -->
+      <div class="w-full md:w-1/3 mb-8 md:mb-0 md:pr-10">
+        <img class="w-full py-4 md:py-8" src="./src/images/single_child_1.png" alt="Child_image1">
+      </div>
+  
+      <!-- Center Content -->
+      <div class="w-full md:w-1/3 text-center">
+        <div class="mb-8">
+          <img class="w-full py-4 md:py-8" src="./src/images/single_child_2.png" alt="Child_image2">
+        </div>
+        <button class="px-8 py-4 md:px-4 md:py-2 bg-orange-100 rounded-lg shadow-lg shadow-pColor md:shadow-none hover:shadow-lg hover:bg-pColor hover:text-white transition-transform duration-500 transform hover:translate-y-1" onclick="Gdonate_modal2.showModal()">
+          <a class="text-green-950 text-4xl">Donate</a>
+        </button>
+        <!-- modal form -->
+        <dialog id="Gdonate_modal2" class="modal">
+          <div class="modal-box bg-slate-200 max-w-full md:max-w-4xl lg:max-w-3xl p-6 mx-auto">
+            <form method="dialog">
+              <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <div class="bg-white p-6 border-4 border-pColor rounded-lg">
+              <div class="max-w-full flex justify-center mb-4">
+                <img src="./src/images/logo_CSMA.png" alt="CSMA Logo" class="w-24 h-auto">
+              </div>
+              <h3 class="text-xl pt-3 text-green-600 text-center font-bold">GENERAL DONATION FORM</h3>
+              <p class="text-center font-bold mb-5">Thank you for donating to our cause</p>
+        
+              <div id="Gdonateform">
+                <form method="post" action="/submit-donation">
+                  <div class="flex flex-col gap-4">
+                    <div class="flex flex-col md:flex-row md:gap-4">
+                      <div class="flex-1">
+                        <label for="Gdonateform_firstname" class="label text-sm">First Name</label>
+                        <input id="Gdonateform_firstname" type="text" placeholder="First Name" required class="input border-2 border-green-400 w-full">
+                      </div>
+        
+                      <div class="flex-1 mt-4 md:mt-0">
+                        <label for="Gdonateform_lastname" class="label text-sm">Last Name</label>
+                        <input id="Gdonateform_lastname" type="text" placeholder="Last Name" required class="input border-2 border-green-400 w-full">
+                      </div>
+                    </div>
+        
+                    <div class="flex flex-col md:flex-row md:gap-4">
+                      <div class="flex-1">
+                        <label for="Gdonateform_contactno" class="label text-sm">Contact Number</label>
+                        <input id="Gdonateform_contactno" type="tel" placeholder="+88 01234-567890" required class="input border-2 border-green-400 w-full">
+                      </div>
+        
+                      <div class="flex-1 mt-4 md:mt-0">
+                        <label for="Gdonateform_email" class="label text-sm">Email</label>
+                        <input id="Gdonateform_email" type="email" placeholder="address@email.com" required class="input border-2 border-green-400 w-full">
+                      </div>
+                    </div>
+        
+                    <div>
+                      <label for="Gdonateform_amount" class="label text-sm">How much do you want to donate?</label>
+                      <div class="flex flex-col md:flex-row">
+                        <select id="Gdonateform_amount" required class="input border-2 border-r-0 rounded-r-none border-green-400 md:w-1/3">
+                          <option value="">Select</option>
+                          <option value="usd">$ USD</option>
+                          <option value="bdt">৳ BDT</option>
+                        </select>
+                        <input id="Gdonateform_amount" type="text" placeholder="Donate Amount" required class="input border-2 border-l-0 rounded-l-none border-green-400 md:w-2/3 mt-2 md:mt-0">
+                      </div>
+                    </div>
+        
+                    <div>
+                      <label for="Gdonateform_address" class="label text-sm">Address</label>
+                      <input id="Gdonateform_address" type="text" placeholder="Address line 1" required class="input border-2 border-green-400 w-full">
+                      <input id="Gdonateform_address" type="text" placeholder="Address line 2" class="input border-2 border-green-400 w-full mt-2">
+                    </div>
+        
+                    <div>
+                      <label for="Gdonateform_purpose" class="label text-sm">Purpose of Donation</label>
+                      <input id="Gdonateform_purpose" type="text" placeholder="Purpose of Donation" class="input border-2 border-green-400 w-full">
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row gap-4 font-bold">
+                      <a href="#" class="text-sm text-blue-800 underline">Privacy Policy</a>
+                      <a href="#" class="text-sm text-blue-800 underline">Data Protection Statement</a>
+                    </div>
+        
+                    <div><h1 class="text-center mt-4">Captcha</h1></div>
+                    <div class="flex items-center mt-2">
+                      <input type="checkbox" id="Gdonateform_agree" name="Gdonateform_agree" required value="agree" class="mr-2">
+                      <label for="Gdonateform_agree" class="text-sm">I agree to make a donation, and proceed to pay.</label>
+                    </div>
+        
+                    <div class="text-center mt-4">
+                      <input type="submit" class="pBtn bg-pColor text-white hover:bg-yColor hover:text-pColor" value="Donation Submit">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </dialog>
+      </div>
+  
+      <!-- Right Text Content -->
+      <div class="w-full md:w-1/3 pl-0 md:pl-8 py-4 md:py-8 order-first md:order-3">
+        <h1 class="text-3xl xl:text-6xl font-extrabold mb-4">The path to change begins with a single child</h1>
+        <h4 class="text-lg xl:text-2xl leading-relaxed md:leading-snug xl:leading-relaxed">
+          Cure SMA Bangladesh has played a significant role in introducing Risdiplam, an oral drug for SMA treatment, in Bangladesh. We are relentlessly working with all the stakeholders to make the drug available to all SMA patients. We are committed to all our members, the Bangladeshi SMA community, and to the imminent future where we will be a part of achieving universal and easy access to SMA treatments.
+        </h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- listen story slide section -->
+  <div class="mt-8 carousel">
+    <div id="slide1" class="carousel-item relative w-[100%] md:w-full h-2/3">
+      <div class="bg-[#F2F2F3] mb-20 lg:flex justify-between px-8 py-16 items-center relative">
+        <!-- left side -->
+        <div class="lg:w-1/2 flex justify-between items-center md:mr-12">
+          <div class="hidden md:inline">
+            <div class="flex justify-between mr-4 gap-4 mb-4">
+              <div><img class="" src="./src/images/faiyadh_story_1.png"alt="story1"></div>
+              <div><img class="" src="./src/images/faiyadh_story_2.png"alt="story2"></div>
+            </div>
+            <div class="mr-4">
+              <img class="" src="./src/images/faiyadh_story_3.png"alt="story3">
+            </div>
+          </div>
+          <div>
+            <div class="mt-">
+              <a href="https://www.youtube.com/" target="_blank"><img class="py-8 hover:bg-red-600 hover:rounded-xl" src="./src/images/faiyadh_story_4.png" target="_blank" alt="story4"></a>
+              <a href="https://www.youtube.com/" target="_blank"class="absolute text-9xl text-white opacity-70 hover:text-red-700 -mt-80 lg:-mt-64 xl:-mt-80 ml-28 md:ml-24 lg:ml-12 xl:ml-28"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>    
+        </div>
+        <!-- right side -->
+        <div class="lg:w-1/2">
+          <h1 class="text-4xl md:text-6xl font-extrabold text-center lg:text-left">Listen to <br> Faiyadh & <br> Faizan’s story</h1>
+          <div class="text-6xl md:text-8xl text-center"><i class="fa-solid fa-quote-left"></i></div>
+          <h4 class="text-xl md:text-2xl mt-3 leading-normal text-center lg:text-left">our sons were perfectly fine during first year of their births. We noticed something wrong with their leg and hand after 1 year. Our doubt was created by seeing something wrong in my elder son. He could not stand on his feet.</h4>
+        </div>    
+      </div>
+
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+
+    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" class="btn btn-circle">❮</a> 
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+
+
+  </div>    
+
+  <!-- make a difference -->
+  <div class="px-4 sm:px-8 mb-12 sm:mb-20">
+    <h1 class="text-4xl sm:text-6xl font-extrabold text-center mb-12 sm:mb-20">How to make a difference?</h1>
+    <div class="flex flex-col sm:flex-row sm:justify-between gap-6 sm:gap-10">
+      <div class="w-full sm:w-1/3">
+        <img src="./src/images/dif_image_1.png" alt="Sponsor a child" class="w-full h-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold py-4 sm:py-8 text-center lg:text-left">Sponsor a child</h2>
+        <h4 class="text-xl lg:text-2xl text-center lg:text-left">Provide monetary assistance to a child with SMA</h4>
+      </div>
+      <div class="w-full sm:w-1/3">
+        <img src="./src/images/dif_image_2.png" alt="Volunteer your time" class="w-full h-auto">
+        <h2 class="text-2xl md:text-3xl font-bold py-4 sm:py-8 text-center lg:text-left">Volunteer your time</h2>
+        <h4 class="text-xl lg:text-2xl text-center lg:text-left">Help us organize a variety of awareness sessions, seminars & medical camps and more to enrich the lives of our kids.</h4>
+      </div>
+      <div class="w-full sm:w-1/3">
+        <img src="./src/images/dif_image_3.png" alt="Go the extra mile" class="w-full h-auto">
+        <h2 class="text-2xl md:text-3xl font-bold py-4 sm:py-8 text-center lg:text-left">Go the extra mile</h2>
+        <h4 class="text-xl lg:text-2xl text-center lg:text-left">We collaborate to raise funds and awareness for our cause.</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- our kids have to say section -->
+  <div class="md:flex justify-between items-center bg-green-950 text-white mb-20 relative">
+    <div class="md:w-5/12">
+      <a href="https://www.youtube.com/" target="_blank"><img class="py-8 hover:bg-red-600 hover:rounded-xl" src="./src/images/child_say_1.png" target="_blank" alt="story4"></a>
+      <!-- play button -->
+      <a href="https://www.youtube.com/" target="_blank"class="absolute text-9xl text-white opacity-70 hover:text-red-700 -mt-80 md:-mt-64 lg:-mt-80 xl:-mt-[22rem] ml-36 md:ml-28 lg:ml-40 xl:ml-44"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="md:w-7/12 py-8 px-8">
+      <h1 class="text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-normal mb-8">See what our kids <br> have to say</h1>
+
+      <h4 class="text-xl md:text-lg xl:text-xl font-light italic mt-3 leading-normal md:leading-0 xl:leading-normal pb-4">"When I visited Faiyadh, I was blown away by the gratitude I received. Seeing how my small monthly donation changed his life was a heartwarming experience."</h4>
+      <h4 class="text-2xl md:text-xl lg:text-2xl font-bold pb-8">Mr. Jamal Ahmed, sponsor since 2023</h4>
+
+      <h4 class="text-xl md:text-lg xl:text-xl font-light italic mt-3 leading-normal md:leading-0 xl:leading-normal pb-4">"Spending time with the kids and seeing their happiness is a rewarding experience. Knowing I am helping make their life better in such a small way is an amazing feeling."</h4>
+      <h4 class="text-2xl md:text-xl lg:text-2xl font-bold pb-8">Dr. Shamima Khan, volunteer physician since 2021</h4>
+    </div>    
+  </div>
+
+  <!-- Meet the partners -->
+  <div class="mb-20">
+    <div class="md:flex justify-between items-center mx-8">
+      <div class="md:w-6/12">
+        <img class="py-8" src="./src/images/meet_the_partner.png" alt="">
+      </div>
+      <div class="md:w-6/12 pl-10 py-0 md:py-8">
+        <h1 class="text-4xl xl:text-6xl font-extrabold">Meet the partners who help us transform lives</h1>
+        <h4 class="text-xl xl:text-2xl mt-5">Medical Institutions and companies have given their time and support to help us make a difference in children's lives.
+        </h4>
+        <ul class="text-xl xl:text-2xl list-disc pl-10 mt-5">
+          <li>National Institute of Neuroscience</li>
+          <li>Bangladesh Shishu Hospital</li>
+          <li>BSMMU</li>
+          <li>Roche Bangladesh Limited</li>
+        </ul>
+      </div>    
+    </div>    
+  </div>
+  
+
+
+
+  
+    <!-- social share for body position -->
+    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 mt-6 mr-4 sm:mr-6 md:mr-10 lg:mr-12 ease-in-out duration-1000">
+      <div class="w-10 hover:w-14 text-center bg-lime-100/50 border-2 border-pColor rounded-lg drop-shadow-xl hover:bg-slate-200 ease-in-out duration-30">
+        <p><i class="fa-solid fa-thumbtack text-red-600 py-2 text-lg sm:text-xl md:text-2xl drop-shadow-lg"></i></p>
+        <hr><hr><hr>
+        <p><a href="#"><i class="fab social-a fa-facebook py-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#3b5998] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+        <p><a href="#"><i class="fab social-a fa-linkedin text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#0A66C2] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+        <p><a href="#"><i class="fab social-a fa-youtube py-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#CD201F] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+        <p><a href="#"><i class="fab social-a fa-instagram pb-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-orange-500 hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+        <p><a href="#"><i class="fab social-a fa-whatsapp pb-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#25D366] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+      </div>
+    </div>
+  
+    
+
+  </main>
+
+  <footer class="pt-4 bg-gradient-to-b from-green-600 to-black" style="border-radius: 120px 0px 0px;">
+    <!-- footer body -->
+      <div class="px-8 md:pt-14 pb-4 md:pb-14">
+        <div class="flex flex-col sm:flex-row text-center lg:text-left md:justify-between">
+          <div class="w-32 md:w-48 ml-28 md:ml-0">
+            <img src="./src/images/logo-CSMA-shadow.png" alt="CURE SMA BANGLADESH Logo">
+          </div>
+          
+          <div>
+            <h1 class="pb-3 text-xl font-semibold text-white">CURE SMA BANGLADESH</h1>
+            <div class="text-lg font-light text-white">
+              <p class="pb-2">154/6/4, Jhilkanan R/A, West Rampura, <br> Dhaka-1219, Bangladesh<br></p>
+              <p class="pb-2"><a class="flex-1 text-decoration-none text-white hover:text-yColor" href="tel:+8801841118486">+88 0184 111 84 86</a></p>
+              <p><a class="flex-1 text-decoration-none text-white hover:text-yColor" href="e">info@curesmabangladesh.org</a></p>
+              <a href="mailto:info@curesmabangladesh.org"></a>
+            </div>
+          </div>
+          
+          <div class="mb-6 sm:mb-0 text-center ml-32 md:ml-0">
+            <h1 class="flex pb-3 text-xl font-semibold text-white">FOLLOW US</h1>
+            <div>
+              <div class="mb-4 flex">
+                <a href="#"><i class="fab social-a fa-facebook bg-white text-4xl py-1 px-[6px] rounded mr-[14px] hover:text-[#3b5998]"></i></a>
+                <a href="#"><i class="fab social-a fa-linkedin bg-white text-4xl py-1 px-2 rounded hover:text-[#0A66C2]"></i></a>
+              </div>
+              <div class="flex">
+                <a href="#"><i class="fab social-a fa-youtube bg-white text-4xl py-[6px] px-1 rounded mr-[14px] hover:text-[#CD201F]"></i></a>
+                <a href="#"><i class="fab social-a fa-instagram bg-white text-4xl py-1 px-1 rounded hover:text-orange-500" style="padding:6px 8px;"></i></a>
+              </div>
+            </div>
+          </div>
+      
+          <div>
+            <h1 class="pb-3 text-xl font-semibold text-white">Get Involved</h1>
+            <ul>
+              <li><a href="member_registration.html" class="text-lg font-light text-white text-decoration-none hover:text-yColor">Patient Registration</a></li>
+              <li><a href="donate_cure_sma_bd.html" class="text-lg font-light text-white text-decoration-none hover:text-yColor ">Donation</a></li>
+              <li><a href="#about-us" class="text-lg font-light text-white text-decoration-none hover:text-yColor">About Us</a></li>
+              <li><a href="#patient-history" class="text-lg font-light text-white text-decoration-none hover:text-yColor">Patient History</a></li>
+            </ul>
+          </div>
+      
+        </div>    
+      </div>
+    
+    <!-- footer bottom -->
+      <div class="">
+        <span>
+          <hr class="h-3">
+        </span>
+        <div class="px-8 text-base pb-4 pt-2 flex justify-between text-center text-white mx-auto">
+          <div>
+            <p>Copyright © 2024 Code Cursor</p>
+          </div>
+          <div>
+            <p><a class="text-decoration-none text-white hover:text-yColor" href="#">Privacy Policy</a></p>
+          </div>
+          <div>
+            <p>Developed by: <a class="text-decoration-none text-white hover:text-yColor" href="http://www.codecursor.com" target="_blank" >Code Cursor</a></p>
+          </div>
+        </div> 
+      </div>
+  </footer>
+
+
+
+    
+</body>
+</html>
