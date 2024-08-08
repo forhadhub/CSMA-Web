@@ -103,8 +103,8 @@
         <!-- Uncomment this line if needed for Google Translate -->
         <!-- <div id="google_translate_element"></div> -->
         <a class="flex text-decoration-none text-white border-x-2 p-2 md:p-3" href="#">Language</a>
-        <a class="flex text-decoration-none text-white p-2 md:p-3 hover:text-yColor" href="blog.html">Blog</a>
-        <a class="flex text-decoration-none text-white border-x-2 p-2 md:p-3 hover:text-yColor" href="member_registration.html">Registration</a>
+        <a class="flex text-decoration-none text-white p-2 md:p-3 hover:text-yColor" href="cure_sma_bd_blog.html">Blog</a>
+        <a class="flex text-decoration-none text-white border-x-2 p-2 md:p-3 hover:text-yColor" href="cure_sma_bd_member_registration.html">Registration</a>
             
         <i class="fa-solid fa-hand-holding-medical text-white text-3xl pl-2 md:pl-3"></i>
       </div>
@@ -158,11 +158,11 @@
               <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
                 <a href="#" class="hover:text-pColor">Gallery <i class="fa-solid fa-angle-down"></i></a>
                 <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
-                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Photos</a></li>
-                  <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Videos</a></li>
+                  <li><a href="cure_sma_bd_photos.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Photos</a></li>
+                  <li><a href="cure_sma_bd_videos.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Videos</a></li>
                 </ul>
               </li>
-              <li class="relative group hover:translate-y-1 hover:duration-[2s] "><a href="contact.html" class="hover:text-pColor">Contact </a></li>
+              <li class="relative group hover:translate-y-1 hover:duration-[2s] "><a href="cure_sma_bd_contact.html" class="hover:text-pColor">Contact </a></li>
             </ul>
           </div>
         <!-- site logo -->
@@ -213,17 +213,17 @@
             <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
               <a href="#" class="hover:text-pColor">Gallery <i class="fa-solid fa-angle-down"></i></a>
               <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
-                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Photos</a></li>
-                <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Videos</a></li>
+                <li><a href="cure_sma_bd_photos.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Photos</a></li>
+                <li><a href="cure_sma_bd_videos.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Videos</a></li>
               </ul>
             </li>
-            <li class="relative group hover:translate-y-1 hover:duration-[2s] "><a href="contact.html" class="hover:text-pColor">Contact </a></li>
+            <li class="relative group hover:translate-y-1 hover:duration-[2s] "><a href="cure_sma_bd_contact.html" class="hover:text-pColor">Contact </a></li>
           </ul>
         </div>
         <!-- button -->
         <div class="flex gap-4 lg:gap-1 xl:gap-4 2xl:gap-4">
             <div>
-              <a class="pBtn text-sm md:text-xl" href="member_registration.html"><i class="fa-solid fa-box"></i> <span class="hidden md:inline lg:hidden xl:inline">Patient</span> <span class="inline lg:hidden xl:inline">Registration</span></a>
+              <a class="pBtn text-sm md:text-xl" href="cure_sma_bd_member_registration.html"><i class="fa-solid fa-box"></i> <span class="hidden md:inline lg:hidden xl:inline">Patient</span> <span class="inline lg:hidden xl:inline">Registration</span></a>
             </div>
             <div>
               <a class="pBtn bg-rColor text-white " href="#" onclick="Gdonate_modal.showModal()"><i class="fa-solid fa-heart-circle-check"></i> <span class="text-base md:text-xl hidden md:inline lg:hidden xl:inline">Donate</span></a>
@@ -318,8 +318,30 @@
   </header>
 
   <main>
+    <!-- category selection -->
+    <div class="flex flex-col items-center justify-center bg-lime-100/50 p-6">
+      <div class="relative w-80">
+        <label for="photo_category" class="block text-xl font-medium text-pColor mb-2 text-center">Photo Category</label>
+        <select id="photo_category" name="photo_category" class="block w-full border border-pColor/50 h-10 rounded-md shadow-sm focus:ring-coral focus:border-coral sm:text-sm">
+          <option value="" disabled selected>All Photos</option>
+          <option value="Patients">Patients</option>
+          <option value="Committee">Committee</option>
+          <option value="Meeting">Meeting</option>
+          <option value="Events 1">Events 1</option>
+          <option value="Events 2">Events 2</option>
+          <option value="Events 3">Events 3</option>
+          <option value="Events 4">Events 4</option>
+          <option value="Treatment">Treatment</option>
+        </select>
+      </div>
+    </div>
+    
+    <!-- photo gallery -->
     <div class="flex flex-col items-center justify-center font-sans my-10">
+      <!-- category name -->
       <h1 class="mb-4 text-2xl underline text-pColor font-bold">Cure SMA Bangladesh</h1>
+
+      <!-- Gallery -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mx-auto px-8 my-10">
         <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
           <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
@@ -341,8 +363,93 @@
           <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
           <p class="mt-2 text-center italic">"Child Say 2"</p>
         </div>
+
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Nabonee"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Two Brothers"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Shahreen"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 1"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 2"</p>
+        </div>
+
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Nabonee"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Two Brothers"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Shahreen"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 1"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 2"</p>
+        </div>
+
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Nabonee"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Two Brothers"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Shahreen"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 1"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 2"</p>
+        </div>
+
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Nabonee"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Two Brothers"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Shahreen"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 1"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 2"</p>
+        </div>
       </div>
-      
+
+      <!-- canonical number -->
       <div class="flex justify-center mt-4">
         <button class="btn join-item">1</button>
         <button class="btn join-item">2</button>
@@ -417,7 +524,7 @@
           <div>
             <h1 class="pb-3 text-xl font-semibold text-white">Get Involved</h1>
             <ul>
-              <li><a href="member_registration.html" class="text-lg font-light text-white text-decoration-none hover:text-yColor">Patient Registration</a></li>
+              <li><a href="cure_sma_bd_member_registration.html" class="text-lg font-light text-white text-decoration-none hover:text-yColor">Patient Registration</a></li>
               <li><a href="donate_cure_sma_bd.html" class="text-lg font-light text-white text-decoration-none hover:text-yColor ">Donation</a></li>
               <li><a href="#about-us" class="text-lg font-light text-white text-decoration-none hover:text-yColor">About Us</a></li>
               <li><a href="#patient-history" class="text-lg font-light text-white text-decoration-none hover:text-yColor">Patient History</a></li>
@@ -449,7 +556,6 @@
 
   <!-- others -->
   <script>
-    // Array to store image sources
     const images = [
       "./src/images/single_child_2.png",
       "./src/images/single_child_1.png",

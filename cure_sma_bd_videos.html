@@ -100,9 +100,11 @@
         </a>
       </div>
       <div class="flex justify-center text-base text-center items-center md:mt-0">
+        <!-- Uncomment this line if needed for Google Translate -->
+        <!-- <div id="google_translate_element"></div> -->
         <a class="flex text-decoration-none text-white border-x-2 p-2 md:p-3" href="#">Language</a>
         <a class="flex text-decoration-none text-white p-2 md:p-3 hover:text-yColor" href="cure_sma_bd_blog.html">Blog</a>
-        <a class="flex text-decoration-none text-white border-x-2 p-2 md:p-3 hover:text-yColor" href="#">Registration</a>
+        <a class="flex text-decoration-none text-white border-x-2 p-2 md:p-3 hover:text-yColor" href="cure_sma_bd_member_registration.html">Registration</a>
             
         <i class="fa-solid fa-hand-holding-medical text-white text-3xl pl-2 md:pl-3"></i>
       </div>
@@ -118,7 +120,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-lime-200 rounded-box w-80 bg-pblack bg-opacity-55 border-r-2 border-pred shadow-lg shadow-pColor/40">
-              <li><a href="#" class="hover:text-pColor">Home</a></li>
+              <li><a href="index.html" class="hover:text-pColor">Home</a></li>
               <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
                 <a href="#" class="hover:text-pColor">About <i class="fa-solid fa-angle-down"></i></a>
                 <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
@@ -173,7 +175,7 @@
         <!-- large display menu -->
         <div class="navbar-center hidden lg:flex font-poppins px-5">
           <ul class="flex space-x-4 px-1 lg:text-base gap-6 lg:gap-0 xl:gap-6">
-            <li><a href="#" class="hover:text-pColor">Home</a></li>
+            <li><a href="index.html" class="hover:text-pColor">Home</a></li>
             <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
               <a href="#" class="hover:text-pColor">About <i class="fa-solid fa-angle-down"></i></a>
               <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
@@ -221,7 +223,7 @@
         <!-- button -->
         <div class="flex gap-4 lg:gap-1 xl:gap-4 2xl:gap-4">
             <div>
-              <a class="pBtn text-sm md:text-xl" href="#"><i class="fa-solid fa-box"></i> <span class="hidden md:inline lg:hidden xl:inline">Patient</span> <span class="inline lg:hidden xl:inline">Registration</span></a>
+              <a class="pBtn text-sm md:text-xl" href="cure_sma_bd_member_registration.html"><i class="fa-solid fa-box"></i> <span class="hidden md:inline lg:hidden xl:inline">Patient</span> <span class="inline lg:hidden xl:inline">Registration</span></a>
             </div>
             <div>
               <a class="pBtn bg-rColor text-white " href="#" onclick="Gdonate_modal.showModal()"><i class="fa-solid fa-heart-circle-check"></i> <span class="text-base md:text-xl hidden md:inline lg:hidden xl:inline">Donate</span></a>
@@ -230,7 +232,7 @@
             <dialog id="Gdonate_modal" class="modal">
               <div class="modal-box bg-slate-200 max-w-full md:max-w-4xl lg:max-w-3xl p-6 mx-auto">
                 <form method="dialog">
-                  <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                  <button class="btn btn-base btn-circle btn-ghost absolute right-2 top-2 text-red-500">✕</button>
                 </form>
                 <div class="bg-white p-6 border-4 border-pColor rounded-lg">
                   <div class="max-w-full flex justify-center mb-4">
@@ -239,54 +241,54 @@
                   <h3 class="text-xl pt-3 text-green-600 text-center font-bold">GENERAL DONATION FORM</h3>
                   <p class="text-center font-bold mb-5">Thank you for donating to our cause</p>
             
-                  <div id="Reg_form">
+                  <div id="Gdonateform">
                     <form method="post" action="/submit-donation">
                       <div class="flex flex-col gap-4">
                         <div class="flex flex-col md:flex-row md:gap-4">
                           <div class="flex-1">
-                            <label for="Reg_form_firstname" class="label text-sm">First Name</label>
-                            <input id="Reg_form_firstname" type="text" placeholder="First Name" required class="input border-2 border-slate-400 w-full">
+                            <label for="Gdonateform_firstname" class="label text-sm">First Name</label>
+                            <input id="Gdonateform_firstname" type="text" placeholder="First Name" required class="input border-2 border-green-400 w-full">
                           </div>
             
                           <div class="flex-1 mt-4 md:mt-0">
-                            <label for="Reg_form_lastname" class="label text-sm">Last Name</label>
-                            <input id="Reg_form_lastname" type="text" placeholder="Last Name" required class="input border-2 border-slate-400 w-full">
+                            <label for="Gdonateform_lastname" class="label text-sm">Last Name</label>
+                            <input id="Gdonateform_lastname" type="text" placeholder="Last Name" required class="input border-2 border-green-400 w-full">
                           </div>
                         </div>
             
                         <div class="flex flex-col md:flex-row md:gap-4">
                           <div class="flex-1">
-                            <label for="Reg_form_contactno" class="label text-sm">Contact Number</label>
-                            <input id="Reg_form_contactno" type="tel" placeholder="+88 01234-567890" required class="input border-2 border-slate-400 w-full">
+                            <label for="Gdonateform_contactno" class="label text-sm">Contact Number</label>
+                            <input id="Gdonateform_contactno" type="tel" placeholder="+88 01234-567890" required class="input border-2 border-green-400 w-full">
                           </div>
             
                           <div class="flex-1 mt-4 md:mt-0">
-                            <label for="Reg_form_email" class="label text-sm">Email</label>
-                            <input id="Reg_form_email" type="email" placeholder="address@email.com" required class="input border-2 border-slate-400 w-full">
+                            <label for="Gdonateform_email" class="label text-sm">Email</label>
+                            <input id="Gdonateform_email" type="email" placeholder="address@email.com" required class="input border-2 border-green-400 w-full">
                           </div>
                         </div>
             
                         <div>
-                          <label for="Reg_form_amount" class="label text-sm">How much do you want to donate?</label>
+                          <label for="Gdonateform_amount" class="label text-sm">How much do you want to donate?</label>
                           <div class="flex flex-col md:flex-row">
-                            <select id="Reg_form_amount" required class="input border-2 border-r-0 rounded-r-none border-slate-400 md:w-1/3">
+                            <select id="Gdonateform_amount" required class="input border-2 border-r-0 rounded-r-none border-green-400 md:w-1/3">
                               <option value="">Select</option>
                               <option value="usd">$ USD</option>
                               <option value="bdt">৳ BDT</option>
                             </select>
-                            <input id="Reg_form_amount" type="text" placeholder="Donate Amount" required class="input border-2 border-l-0 rounded-l-none border-slate-400 md:w-2/3 mt-2 md:mt-0">
+                            <input id="Gdonateform_amount" type="text" placeholder="Donate Amount" required class="input border-2 border-l-0 rounded-l-none border-green-400 md:w-2/3 mt-2 md:mt-0">
                           </div>
                         </div>
             
                         <div>
-                          <label for="Reg_form_address" class="label text-sm">Address</label>
-                          <input id="Reg_form_address" type="text" placeholder="Address line 1" required class="input border-2 border-slate-400 w-full">
-                          <input id="Reg_form_address" type="text" placeholder="Address line 2" class="input border-2 border-slate-400 w-full mt-2">
+                          <label for="Gdonateform_address" class="label text-sm">Address</label>
+                          <input id="Gdonateform_address" type="text" placeholder="Address line 1" required class="input border-2 border-green-400 w-full">
+                          <input id="Gdonateform_address" type="text" placeholder="Address line 2" class="input border-2 border-green-400 w-full mt-2">
                         </div>
             
                         <div>
-                          <label for="Reg_form_purpose" class="label text-sm">Purpose of Donation</label>
-                          <input id="Reg_form_purpose" type="text" placeholder="Purpose of Donation" class="input border-2 border-slate-400 w-full">
+                          <label for="Gdonateform_purpose" class="label text-sm">Purpose of Donation</label>
+                          <input id="Gdonateform_purpose" type="text" placeholder="Purpose of Donation" class="input border-2 border-green-400 w-full">
                         </div>
                         
                         <div class="flex flex-col md:flex-row gap-4 font-bold">
@@ -296,12 +298,12 @@
             
                         <div><h1 class="text-center mt-4">Captcha</h1></div>
                         <div class="flex items-center mt-2">
-                          <input type="checkbox" id="Reg_form_agree" name="Reg_form_agree" required value="agree" class="mr-2">
-                          <label for="Reg_form_agree" class="text-sm">I agree to make a donation, and proceed to pay.</label>
+                          <input type="checkbox" id="Gdonateform_agree" name="Gdonateform_agree" required value="agree" class="mr-2">
+                          <label for="Gdonateform_agree" class="text-sm">I agree to make a donation, and proceed to pay.</label>
                         </div>
             
                         <div class="text-center mt-4">
-                          <input type="submit" class="pBtn bg-pColor text-white hover:bg-yColor hover:text-pColor" value="Donation Submit">
+                          <a href="redirect.html"><input type="submit" class="pBtn bg-pColor text-white hover:bg-yColor hover:text-pColor" value="Donation Submit"></a>
                         </div>
                       </div>
                     </form>
@@ -316,45 +318,175 @@
   </header>
 
   <main>
-    <!--successfully donate submitted -->
-    <div class="text-center my-10">
-      <div class="flex flex-col items-center">
-        <!-- Image Centering -->
-        <img src="./src/images/thank_you.jpg" alt="Cure SMA Bangladesh" class="mb-5">
-        
-        <!-- Heading and Text -->
-        <h1 class="text-pink-500 text-xl md:text-3xl drop-shadow-md pb-5 italic"><i class="fa-solid fa-heart-circle-check"></i> for you invaluable contribution <i class="fa-solid fa-heart-circle-check"></i></h1>
-        
-        <!-- Back to Home Button -->
-        <a href="">
-          <button class="text-xl md:text-2xl btn bg-pink-500/25 hover:bg-pink-500 btn-lg drop-shadow-lg border-2 border-pink-500 hover:text-white"><i class="fa-solid fa-receipt"></i> Click here & get your invoice</button>
-        </a>
-
-        <h2 class="py-5 text-pfont text-lg">Please check the email for further instruction</h2>
-
-        <!-- Social Media Links -->
-        <div class="flex space-x-4 mb-5">
-          <a href="#"><i class="fab fa-facebook bg-white text-5xl hover:text-[#3b5998]"></i></a>
-          <a href="#"><i class="fab fa-linkedin bg-white text-5xl hover:text-[#0A66C2]"></i></a>
-          <a href="#"><i class="fab fa-youtube bg-white text-5xl hover:text-[#CD201F]"></i></a>
-          <a href="#"><i class="fab fa-instagram bg-white text-5xl hover:text-orange-500"></i></a>
-        </div>
-        
-        <!-- Additional Text and Links -->
-        <h2 class="py-5 text-pfont text-lg">
-          Didn't receive the email yet? <a href="cure_sma_bd_member_registration.html" class="text-blue-400">Click here to try again</a> or, <a href="contactus.html" class="text-blue-400">Contact us</a>
-        </h2>
-        
+    <!-- category selection -->
+    <div class="flex flex-col items-center justify-center bg-lime-100/50 p-6">
+      <div class="relative w-80">
+        <label for="photo_category" class="block text-xl font-medium text-pColor mb-2 text-center">Photo Category</label>
+        <select id="photo_category" name="photo_category" class="block w-full border border-pColor/50 h-10 rounded-md shadow-sm focus:ring-coral focus:border-coral sm:text-sm">
+          <option value="" disabled selected>All Photos</option>
+          <option value="Patients">Patients</option>
+          <option value="Committee">Committee</option>
+          <option value="Meeting">Meeting</option>
+          <option value="Events 1">Events 1</option>
+          <option value="Events 2">Events 2</option>
+          <option value="Events 3">Events 3</option>
+          <option value="Events 4">Events 4</option>
+          <option value="Treatment">Treatment</option>
+        </select>
       </div>
     </div>
     
+    <!-- photo gallery -->
+    <div class="flex flex-col items-center justify-center font-sans my-10">
+      <!-- category name -->
+      <h1 class="mb-4 text-2xl underline text-pColor font-bold">Cure SMA Bangladesh</h1>
 
+      <!-- Gallery -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mx-auto px-8 my-10">
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Nabonee"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Two Brothers"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Shahreen"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 1"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 2"</p>
+        </div>
 
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Nabonee"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Two Brothers"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Shahreen"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 1"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 2"</p>
+        </div>
 
-    
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Nabonee"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Two Brothers"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Shahreen"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 1"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 2"</p>
+        </div>
 
-  <!-- others section add -->
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Nabonee"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Two Brothers"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Shahreen"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 1"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 2"</p>
+        </div>
 
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Nabonee"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Two Brothers"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Shahreen"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 1"</p>
+        </div>
+        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
+          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
+          <p class="mt-2 text-center italic">"Child Say 2"</p>
+        </div>
+      </div>
+
+      <!-- canonical number -->
+      <div class="flex justify-center mt-4">
+        <button class="btn join-item">1</button>
+        <button class="btn join-item">2</button>
+        <button class="btn join-item btn-disabled">...</button>
+        <button class="btn join-item">4</button>
+        <button class="btn join-item">5</button>
+      </div>
+    </div>
+
+    <!-- Image Viewer Modal -->
+    <div id="imageViewer" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+      <div class="relative">
+        <img id="viewerImage" class="max-w-full max-h-full object-contain rounded-md">
+        <button onclick="closeImageViewer()" class="absolute top-4 right-4 bg-white text-red-500 p-2 rounded-full shadow-md hover:bg-gray-300 transition-colors duration-300">
+          &times;
+        </button>
+        <button onclick="previousImage()" class="absolute left-4 inset-y-1/2 transform -translate-y-1/2 text-white text-3xl">
+          &larr;
+        </button>
+        <button onclick="nextImage()" class="absolute right-4 inset-y-1/2 transform -translate-y-1/2 text-white text-3xl">
+          &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- social share for body position -->
+    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 mt-6 mr-4 sm:mr-6 md:mr-10 lg:mr-12 ease-in-out duration-1000">
+      <div class="w-10 hover:w-14 text-center bg-lime-100/50 border-2 border-pColor rounded-lg drop-shadow-xl hover:bg-slate-200 ease-in-out duration-30">
+        <p><i class="fa-solid fa-thumbtack text-red-600 py-2 text-lg sm:text-xl md:text-2xl drop-shadow-lg"></i></p>
+        <hr><hr><hr>
+        <p><a href="#"><i class="fab social-a fa-facebook py-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#3b5998] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+        <p><a href="#"><i class="fab social-a fa-linkedin text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#0A66C2] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+        <p><a href="#"><i class="fab social-a fa-youtube py-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#CD201F] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+        <p><a href="#"><i class="fab social-a fa-instagram pb-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-orange-500 hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+        <p><a href="#"><i class="fab social-a fa-whatsapp pb-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#25D366] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+      </div>
+    </div>
   </main>
 
   <footer class="pt-4 bg-gradient-to-b from-green-600 to-black" style="border-radius: 120px 0px 0px;">
@@ -392,8 +524,8 @@
           <div>
             <h1 class="pb-3 text-xl font-semibold text-white">Get Involved</h1>
             <ul>
-              <li><a href="#patient-registration" class="text-lg font-light text-white text-decoration-none hover:text-yColor">Patient Registration</a></li>
-              <li><a href="#donation" class="text-lg font-light text-white text-decoration-none hover:text-yColor ">Donation</a></li>
+              <li><a href="cure_sma_bd_member_registration.html" class="text-lg font-light text-white text-decoration-none hover:text-yColor">Patient Registration</a></li>
+              <li><a href="donate_cure_sma_bd.html" class="text-lg font-light text-white text-decoration-none hover:text-yColor ">Donation</a></li>
               <li><a href="#about-us" class="text-lg font-light text-white text-decoration-none hover:text-yColor">About Us</a></li>
               <li><a href="#patient-history" class="text-lg font-light text-white text-decoration-none hover:text-yColor">Patient History</a></li>
             </ul>
@@ -422,7 +554,39 @@
   </footer>
 
 
-<!-- others -->
+  <!-- others -->
+  <script>
+    const images = [
+      "./src/images/single_child_2.png",
+      "./src/images/single_child_1.png",
+      "./src/images/1. Nabonee.png"
+    ];
+
+    let currentIndex = 0;
+
+    function openImageViewer(src, index) {
+      const viewer = document.getElementById('imageViewer');
+      const viewerImage = document.getElementById('viewerImage');
+      currentIndex = index;
+      viewerImage.src = src;
+      viewer.classList.remove('hidden');
+    }
+
+    function closeImageViewer() {
+      const viewer = document.getElementById('imageViewer');
+      viewer.classList.add('hidden');
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      document.getElementById('viewerImage').src = images[currentIndex];
+    }
+
+    function previousImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      document.getElementById('viewerImage').src = images[currentIndex];
+    }
+  </script>  
     
 </body>
 </html>
