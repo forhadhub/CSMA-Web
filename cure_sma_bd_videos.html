@@ -20,12 +20,12 @@
     <!-- google font: poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,3150;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,3150;1,900&display=swap" rel="stylesheet">
 
     <!-- google font: tiro bangla -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,3150;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,3150;1,900&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
 
     <script>
         tailwind.config = {
@@ -81,7 +81,14 @@
       background: rgb(255,255,255);
       background: linear-gradient(184deg, rgba(255,255,255,0.31976540616246496) 0%, rgba(255,255,255,0) 100%);
     }
-    </style>
+    
+    /* custom gallery */
+    .aspect-w-16 { padding-bottom: 56.25%; } /* 16:9 Aspect Ratio */
+    .aspect-w-16 iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .aspect-w-16, .aspect-w-16 iframe { overflow: hidden; }
+
+
+  </style>
 
 </head>
 
@@ -94,7 +101,7 @@
           <i class="fas fa-envelope"></i> 
           <span class="hidden lg:inline">&nbsp;info@curesmabangladesh.org</span>
         </a>
-        <a class="flex-1 text-decoration-none text-white hover:text-yColor" href="tel:+8801841118486">
+        <a class="flex-1 text-decoration-none text-white hover:text-yColor" href="tel:+83151841118486">
           <i class="fas fa-phone"></i> 
           <span class="hidden md:inline">&nbsp;+88 0184 111 84 86</span>
         </a>
@@ -119,7 +126,7 @@
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-lime-200 rounded-box w-80 bg-pblack bg-opacity-55 border-r-2 border-pred shadow-lg shadow-pColor/40">
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-lime-200 rounded-box w-315 bg-pblack bg-opacity-55 border-r-2 border-pred shadow-lg shadow-pColor/40">
               <li><a href="index.html" class="hover:text-pColor">Home</a></li>
               <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
                 <a href="#" class="hover:text-pColor">About <i class="fa-solid fa-angle-down"></i></a>
@@ -146,7 +153,7 @@
               </li>
               <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
                 <a href="#" class="hover:text-pColor">Support <i class="fa-solid fa-angle-down"></i></a>
-                <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg">
+                <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-315 p-2 shadow-lg">
                   <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Multidisciplinary Clinic</a></li>
                   <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About multidisciplinary Clinic</a></li>
                   <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Address of multidisciplinary Clinic</a></li>
@@ -201,7 +208,7 @@
             </li>
             <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
               <a href="#" class="hover:text-pColor">Support <i class="fa-solid fa-angle-down"></i></a>
-              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg">
+              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-315 p-2 shadow-lg">
                 <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Multidisciplinary Clinic</a></li>
                 <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About multidisciplinary Clinic</a></li>
                 <li><a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Address of multidisciplinary Clinic</a></li>
@@ -292,8 +299,8 @@
                         </div>
                         
                         <div class="flex flex-col md:flex-row gap-4 font-bold">
-                          <a href="#" class="text-sm text-blue-800 underline">Privacy Policy</a>
-                          <a href="#" class="text-sm text-blue-800 underline">Data Protection Statement</a>
+                          <a href="#" class="text-sm text-blue-3150 underline">Privacy Policy</a>
+                          <a href="#" class="text-sm text-blue-3150 underline">Data Protection Statement</a>
                         </div>
             
                         <div><h1 class="text-center mt-4">Captcha</h1></div>
@@ -319,11 +326,11 @@
 
   <main>
     <!-- category selection -->
-    <div class="flex flex-col items-center justify-center bg-lime-100/50 p-6">
+    <div class="flex flex-col items-center justify-center bg-pColor/25 p-6 skeleton">
       <div class="relative w-80">
         <label for="photo_category" class="block text-xl font-medium text-pColor mb-2 text-center">Photo Category</label>
         <select id="photo_category" name="photo_category" class="block w-full border border-pColor/50 h-10 rounded-md shadow-sm focus:ring-coral focus:border-coral sm:text-sm">
-          <option value="" disabled selected>All Photos</option>
+          <option value="" disabled selected>All Videos</option>
           <option value="Patients">Patients</option>
           <option value="Committee">Committee</option>
           <option value="Meeting">Meeting</option>
@@ -336,116 +343,150 @@
       </div>
     </div>
     
-    <!-- photo gallery -->
+    <!-- video gallery -->
     <div class="flex flex-col items-center justify-center font-sans my-10">
       <!-- category name -->
-      <h1 class="mb-4 text-2xl underline text-pColor font-bold">Cure SMA Bangladesh</h1>
+      <h1 class="mb-4 text-2xl underline text-pColor font-bold">All Videos</h1>
 
       <!-- Gallery -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mx-auto px-8 my-10">
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
+      <div class="px-8 my-10">
+        <!-- Gallery -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Video 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/j3EnPwyxHuA?si=xyqUh3mzwo3KJf-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">Cure SMA Bangladesh</h2>
+                </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/J2PkxSPN7Gw?si=B6yXRuop_7v6uzg9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">দেশেই প্রতিকার সম্ভব এসএমএ রোগের</h2>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/QzQSaYWi1zE?si=vTxu4pGxoezLT_O6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">বিরল রোগে আক্রান্ত ১৬৫ শিশু | SMA</h2>
+                </div>
+            </div>
+            <!-- Video 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+              <div class="relative aspect-w-16">
+                  <iframe src="https://www.youtube.com/embed/j3EnPwyxHuA?si=xyqUh3mzwo3KJf-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-4">
+                  <h2 class="text-lg font-semibold">Cure SMA Bangladesh</h2>
+              </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/J2PkxSPN7Gw?si=B6yXRuop_7v6uzg9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">দেশেই প্রতিকার সম্ভব এসএমএ রোগের</h2>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/QzQSaYWi1zE?si=vTxu4pGxoezLT_O6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">বিরল রোগে আক্রান্ত ১৬৫ শিশু | SMA</h2>
+                </div>
+            </div>
+            <!-- Video 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+              <div class="relative aspect-w-16">
+                  <iframe src="https://www.youtube.com/embed/j3EnPwyxHuA?si=xyqUh3mzwo3KJf-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-4">
+                  <h2 class="text-lg font-semibold">Cure SMA Bangladesh</h2>
+              </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/J2PkxSPN7Gw?si=B6yXRuop_7v6uzg9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">দেশেই প্রতিকার সম্ভব এসএমএ রোগের</h2>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/QzQSaYWi1zE?si=vTxu4pGxoezLT_O6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">বিরল রোগে আক্রান্ত ১৬৫ শিশু | SMA</h2>
+                </div>
+            </div>
+            <!-- Video 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+              <div class="relative aspect-w-16">
+                  <iframe src="https://www.youtube.com/embed/j3EnPwyxHuA?si=xyqUh3mzwo3KJf-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-4">
+                  <h2 class="text-lg font-semibold">Cure SMA Bangladesh</h2>
+              </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/J2PkxSPN7Gw?si=B6yXRuop_7v6uzg9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">দেশেই প্রতিকার সম্ভব এসএমএ রোগের</h2>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/QzQSaYWi1zE?si=vTxu4pGxoezLT_O6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">বিরল রোগে আক্রান্ত ১৬৫ শিশু | SMA</h2>
+                </div>
+            </div>
+            <!-- Video 1 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+              <div class="relative aspect-w-16">
+                  <iframe src="https://www.youtube.com/embed/j3EnPwyxHuA?si=xyqUh3mzwo3KJf-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-4">
+                  <h2 class="text-lg font-semibold">Cure SMA Bangladesh</h2>
+              </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/J2PkxSPN7Gw?si=B6yXRuop_7v6uzg9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">দেশেই প্রতিকার সম্ভব এসএমএ রোগের</h2>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                <div class="relative aspect-w-16">
+                    <iframe src="https://www.youtube.com/embed/QzQSaYWi1zE?si=vTxu4pGxoezLT_O6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h2 class="text-lg font-semibold">বিরল রোগে আক্রান্ত ১৬৫ শিশু | SMA</h2>
+                </div>
+            </div>
         </div>
       </div>
 
@@ -459,21 +500,6 @@
       </div>
     </div>
 
-    <!-- Image Viewer Modal -->
-    <div id="imageViewer" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
-      <div class="relative">
-        <img id="viewerImage" class="max-w-full max-h-full object-contain rounded-md">
-        <button onclick="closeImageViewer()" class="absolute top-4 right-4 bg-white text-red-500 p-2 rounded-full shadow-md hover:bg-gray-300 transition-colors duration-300">
-          &times;
-        </button>
-        <button onclick="previousImage()" class="absolute left-4 inset-y-1/2 transform -translate-y-1/2 text-white text-3xl">
-          &larr;
-        </button>
-        <button onclick="nextImage()" class="absolute right-4 inset-y-1/2 transform -translate-y-1/2 text-white text-3xl">
-          &rarr;
-        </button>
-      </div>
-    </div>
 
     <!-- social share for body position -->
     <div class="fixed top-1/2 right-0 transform -translate-y-1/2 mt-6 mr-4 sm:mr-6 md:mr-10 lg:mr-12 ease-in-out duration-1000">
@@ -501,7 +527,7 @@
             <h1 class="pb-3 text-xl font-semibold text-white">CURE SMA BANGLADESH</h1>
             <div class="text-lg font-light text-white">
               <p class="pb-2">154/6/4, Jhilkanan R/A, West Rampura, <br> Dhaka-1219, Bangladesh<br></p>
-              <p class="pb-2"><a class="flex-1 text-decoration-none text-white hover:text-yColor" href="tel:+8801841118486">+88 0184 111 84 86</a></p>
+              <p class="pb-2"><a class="flex-1 text-decoration-none text-white hover:text-yColor" href="tel:+83151841118486">+88 0184 111 84 86</a></p>
               <p><a class="flex-1 text-decoration-none text-white hover:text-yColor" href="e">info@curesmabangladesh.org</a></p>
               <a href="mailto:info@curesmabangladesh.org"></a>
             </div>
@@ -555,38 +581,6 @@
 
 
   <!-- others -->
-  <script>
-    const images = [
-      "./src/images/single_child_2.png",
-      "./src/images/single_child_1.png",
-      "./src/images/1. Nabonee.png"
-    ];
-
-    let currentIndex = 0;
-
-    function openImageViewer(src, index) {
-      const viewer = document.getElementById('imageViewer');
-      const viewerImage = document.getElementById('viewerImage');
-      currentIndex = index;
-      viewerImage.src = src;
-      viewer.classList.remove('hidden');
-    }
-
-    function closeImageViewer() {
-      const viewer = document.getElementById('imageViewer');
-      viewer.classList.add('hidden');
-    }
-
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      document.getElementById('viewerImage').src = images[currentIndex];
-    }
-
-    function previousImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      document.getElementById('viewerImage').src = images[currentIndex];
-    }
-  </script>  
     
 </body>
 </html>
