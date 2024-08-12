@@ -75,7 +75,26 @@
     .banner-bgw{
       background: rgb(255,255,255);
       background: linear-gradient(184deg, rgba(255,255,255,0.31976540616246496) 0%, rgba(255,255,255,0) 100%);
-    }    
+    }
+
+    /* about cure sma */
+    .curve{
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+      .curve:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: -5%;
+        left: -5%;
+        height: 180px;
+        background: #fff;
+        -webkit-clip-path: ellipse(50% 60% at 50% 100%);
+        clip-path: ellipse(50% 60% at 50% 100%);
+      }
     </style>
 
 </head>
@@ -313,64 +332,85 @@
   </header>
 
 <main>
-  <!-- Treatment -->
-  <div id="Treatment" class="py-8">
-    <div class="text-center px-4 sm:px-6 lg:px-8 mb-8">
-      <h1 class="mb-4 text-2xl lg:text-4xl font-bold underline">Available Treatments of SMA</h1>
-    </div>
-
+  <!-- Banner -->
+  <div class="curve py-8 text-center bg-gradient-to-r from-lime-100 via-white/50 to-lime-100">
     <div>
-      <div class="flex flex-col lg:flex-row justify-between px-4 lg:px-8 xl:px-8 items-center rounded-tr-[160px] rounded-tl-[160px] bg-gradient-to-b from-blue-300 to-blue-100">
-        <div class="w-full lg:w-1/4">
-          <img src="./src/images/Treatment-1.png" class="w-40 drop-shadow-lg max-w-screen-md mx-auto" alt="cure-sma-bd-treatment1">
-        </div>
-        <div class="w-3/4 py-4">
-          <h2 class="text-xl font-bold lg:pr-20">Risdiplam is the only oral solution, non-invasive, at-home treatment with proven results in adults, children, and infants with SMA</h2>
-          <p class="mt-2 text-lg">
-            &#10003; Risdiplam is a prescription medicine used to treat spinal muscular atrophy (SMA) in children and adults. <br>
-            &#10003; Manufactured by Roche Pharmaceuticals <br>
-            &#10003; Risdiplam is designed to help produce SMN protein throughout the body <br>
-            &#10003; No needles, sedation, no required monitoring or laboratory testing or hospital stays required to take Risdiplam <br>
-            &#10003; Can be taken anywhere <br>
-            &#10003; FDA approved <br>
-          </p>
-        </div>
-      </div>
-
-      <div class="flex flex-col lg:flex-row justify-between px-4 lg:px-8 xl:px-8 my-8 items-center bg-blue-100">
-        <div class="w-3/4 py-4 lg:pl-20">
-          <h2 class="text-xl font-bold">Onasemnogene abeparvovec, the only one-time gene therapy that stops the progression of SMA</h2>
-          <p class="mt-2 text-lg">
-            &#10003; Onasemnogene abeparvovec-xioi is an essential one-time treatment option that targets the genetic root cause of SMA <br>
-            &#10003; Manufactured by Novartis Pharmaceuticals <br>
-            &#10003; Onasemnogene abeparvovec-xioi is a prescription gene therapy for the treatment of SMA in children less than 2 years old <br>
-            &#10003; Solution for infusion <br>
-            &#10003; FDA approved
-          </p>
-        </div>
-        <div class="w-full lg:w-1/4">
-          <img src="./src/images/Treatment-2.png" class="w-40 drop-shadow-lg max-w-screen-md mx-auto" alt="cure-sma-bd-treatment1">
-        </div>
-      </div>
-
-      <div class="flex flex-col lg:flex-row justify-between px-4 lg:px-8 xl:px-8 items-center rounded-bl-[160px] rounded-br-[160px] bg-gradient-to-b from-blue-100 to-blue-300">
-        <div class="w-full lg:w-1/4">
-          <img src="./src/images/Treatment-3.png" class="w-40 drop-shadow-lg max-w-screen-md mx-auto" alt="cure-sma-bd-treatment1">
-        </div>
-        <div class="w-3/4 py-4 pb-10 lg:pl-20">
-          <h2 class="text-xl font-bold">Nusinersen may offer improvements for important motor milestones</h2>
-          <p class="mt-2 text-lg">
-            &#10003; Nusinersen works by specifically targeting an underlying cause of muscle weakness in SMA <br>
-            &#10003; Manufactured by Biogen Pharmaceuticals <br>
-            &#10003; Solution for infusion <br>
-            &#10003; Nusinersen is a prescription medicine used to treat spinal muscular atrophy (SMA) in pediatric and adult patients <br>
-            &#10003; Nusinersen has been studied for over 8 years in the longest clinical trial program in SMA to date <br>
-            &#10003; Solution for injection
-          </p>
-        </div>
-      </div>
+      <h1 class="text-4xl lg:text-6xl font-bold text-pfont mb-8">About Cure SMA</h1>
+      <p class="text-base lg:text-xl px-10 lg:px-40 text-pfont mb-10">Cure SMA Bangladesh is a registered public charitable foundation with PAN Bangladesh representation. It is a distinct, apolitical, non-profit, non-sectarian entity. It has started its journey with 7 SMA families in March 2023, and have continuously been expanding our network since then to represent SMA families and individuals across the country. We support SMA families through accurate counselling, rich resource pool, patient advocacy and various direct family support services. We are extensively working to empower SMA patients and enabling them to access existing services.</p>
+      <p class="mt-8 pb-32">
+        <a href="#focus" class="w-full md:w-80 px-8 py-3 rounded-3xl text-lg bg-white text-pfont border-2 border-black text-center drop-shadow-lg hover:bg-lime-200 hover:border-2 font-semibold">Read More <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </p>
     </div>
   </div>
+  
+  <!-- foundation key -->
+   <div id="focus" class="mb-16">
+    <div class=" text-center px-4 sm:px-6 lg:px-8 mb-12">
+      <h1 class="mb-4 text-2xl lg:text-4xl font-bold underline">Focus of Cure SMA Foundation</h1>
+      <p class="text-lg mb-2 font-semibold">The foundation likely focuses on several key areas:</p>      
+      <p class="text-lg mb-2">Organizations like Cure SMA Bangladesh Foundation play a crucial role in improving the quality of life for SMA patients and their families by providing support, raising awareness, and advocating for better healthcare services.</p>      
+    </div>
+
+    <div class="px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 ">
+      <div class="flex flex-col items-center text-center">
+        <div class="h-40 w-40 border-2 rounded-full border-pColor mb-4 flex items-center justify-center">
+          <img class="mx-auto" src="./src/images/fnd-focus-1.png" alt="cure-sma-bd-awareness-and-education">
+        </div>
+        <h2 class="text-lg font-semibold text-pColor">Awareness and Education</h2>
+        <div>
+          <p>Raising awareness about SMA within Bangladesh, educating the public and healthcare professionals about the condition, its symptoms, and available treatments.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <div class="h-40 w-40 border-2 rounded-full border-pColor mb-4 flex items-center justify-center">
+          <img class="mx-auto" src="./src/images/fnd-focus-2.png" alt="cure-sma-bd-awareness-and-education">
+        </div>
+        <h2 class="text-lg font-semibold text-pColor">Support Services</h2>
+        <div>
+          <p>Providing support to individuals and families affected by SMA, including emotional support, information on care options, and connecting families with resources.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <div class="h-40 w-40 border-2 rounded-full border-pColor mb-4 flex items-center justify-center">
+          <img class="mx-auto" src="./src/images/fnd-focus-3.png" alt="cure-sma-bd-awareness-and-education">
+        </div>
+        <h2 class="text-lg font-semibold text-pColor">Advocacy</h2>
+        <div>
+          <p>Advocating for improved healthcare services and access to treatment for SMA patients in Bangladesh. This might involve lobbying for inclusion of SMA treatments in healthcare policies and programs.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <div class="h-40 w-40 border-2 rounded-full border-pColor mb-4 flex items-center justify-center">
+          <img class="mx-auto" src="./src/images/fnd-focus-4.png" alt="cure-sma-bd-awareness-and-education">
+        </div>
+        <h2 class="text-lg font-semibold text-pColor">Research</h2>
+        <div>
+          <p>Supporting or conducting research initiatives aimed at better understanding SMA, improving treatment options, and ultimately finding a cure.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <div class="h-40 w-40 border-2 rounded-full border-pColor mb-4 flex items-center justify-center">
+          <img class="mx-auto" src="./src/images/fnd-focus-5.png" alt="cure-sma-bd-awareness-and-education">
+        </div>
+        <h2 class="text-lg font-semibold text-pColor">Fundraising</h2>
+        <div>
+          <p>Organizing fundraising events and campaigns to support the foundation's activities and initiatives.</p>
+        </div>
+      </div>
+      
+    </div>
+   </div>
+
+   <!-- mission vision -->
+    <div class="mt-20 h-32 text-lg text-pColor bg-gradient-to-t from-blue-500 to-transparent">
+      <p class="text-base lg:text-xl px-8 text-center">Cure SMA Bangladesh has played a significant role in introducing SMA treatment in Bangladesh. We are relentlessly working with all the stake holders to make the drug available to all the SMA patients.</p>
+    </div>
+
+
 
 
 
@@ -381,9 +421,7 @@
 
 
 
-  <!-- top order -->
-  <!-- <a class="mr-8 fixed text-5xl bottom-[75px] right-[20px] no-underline text-center leading-[50px] text-[#da0000] hover:text-[40px] hover:text-[rgb(0,102,34)] hover:translate-x-[0.5px] hover:translate-y-[0.5px]" href="#"><i class="fa-solid fa-file-arrow-up"></i></a>
-  </main> -->
+
 
   <footer class="pt-4 bg-gradient-to-b from-green-600 to-black" style="border-radius: 120px 0px 0px;">
     <!-- footer body -->
