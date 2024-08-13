@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cure SMA Bangladesh</title>
-    <title>Cure SMA Bangladesh|Cure SMA Photo|SMA photo gallery</title>
-    <meta name = "Description" content="Explore our photo gallery to see the heartwarming moments, events, and community efforts supporting those affected by Spinal Muscular Atrophy (SMA) in Bangladesh. Witness the impact of our mission through inspiring images."/>
+    <title>Cure SMA Bangladesh| About Cure Spinal Muscular Atrophy Bangladesh | About Cure SMA BD</title>
+    <meta name = "Description" content="Learn about Cure SMA Bangladesh, a crucial organization dedicated to supporting those affected by Spinal Muscular Atrophy in Bangladesh, and how you can help."/>
     <meta name = "author" content="Code Cursor"/>
     <meta name = "rating" content="Cure SMA Bangladesh"/>
     <link href="https://curesmabangladesh.org/" rel="canonical"/>
@@ -81,9 +81,25 @@
       background: rgb(255,255,255);
       background: linear-gradient(184deg, rgba(255,255,255,0.31976540616246496) 0%, rgba(255,255,255,0) 100%);
     }
-    .skeleton {
-      border-radius:0px;
+
+        /* about cure sma banner*/
+        .curve{
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
     }
+
+      .curve:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: -5%;
+        left: -5%;
+        height: 180px;
+        background: #fff;
+        -webkit-clip-path: ellipse(50% 60% at 50% 100%);
+        clip-path: ellipse(50% 60% at 50% 100%);
+      }
     </style>
 
 </head>
@@ -115,7 +131,7 @@
 
     <!-- navbar section-->
     <nav>
-      <div class="flex flex-row justify-between bg-lime-200 py-0 lg:px-8 md:px-8 font-poppins text-pfont font-medium text-base shadow-lg shadow-white/40 navbar bg-pblack bg-opacity-55">
+      <div class="flex flex-row justify-between bg-lime-200/55 py-0 lg:px-8 md:px-8 font-poppins text-pfont font-medium text-base shadow-lg shadow-white/40 navbar">
         <div class="">
           <!-- mobile menu -->
           <div class="dropdown">
@@ -235,7 +251,7 @@
             <dialog id="Gdonate_modal" class="modal">
               <div class="modal-box bg-slate-200 max-w-full md:max-w-4xl lg:max-w-3xl p-6 mx-auto">
                 <form method="dialog">
-                  <button class="btn btn-base btn-circle btn-ghost absolute right-2 top-2 text-red-500">✕</button>
+                  <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                 </form>
                 <div class="bg-white p-6 border-4 border-pColor rounded-lg">
                   <div class="max-w-full flex justify-center mb-4">
@@ -321,175 +337,186 @@
   </header>
 
   <main>
-    <!-- category selection -->
-    <div class="flex flex-col items-center justify-center bg-pColor/25 p-6 skeleton">
-      <div class="relative w-80">
-        <label for="photo_category" class="block text-xl font-medium text-pColor mb-2 text-center">Photo Category</label>
-        <select id="photo_category" name="photo_category" class="block w-full border border-pColor/50 h-10 rounded-md shadow-sm focus:ring-coral focus:border-coral sm:text-sm">
-          <option value="" disabled selected>All Photos</option>
-          <option value="Patients">Patients</option>
-          <option value="Committee">Committee</option>
-          <option value="Meeting">Meeting</option>
-          <option value="Events 1">Events 1</option>
-          <option value="Events 2">Events 2</option>
-          <option value="Events 3">Events 3</option>
-          <option value="Events 4">Events 4</option>
-          <option value="Treatment">Treatment</option>
-        </select>
+  <!-- Banner -->
+  <div class="curve py-8 text-center bg-gradient-to-r from-lime-100 via-white/50 to-lime-100">
+    <div>
+      <h1 class="text-4xl lg:text-6xl font-bold text-pfont mb-8">About Cure SMA</h1>
+      <p class="text-base lg:text-xl px-10 lg:px-40 text-pfont mb-10">Cure SMA Bangladesh is a registered public charitable foundation with PAN Bangladesh representation. It is a distinct, apolitical, non-profit, non-sectarian entity. It has started its journey with 7 SMA families in March 2023, and have continuously been expanding our network since then to represent SMA families and individuals across the country. We support SMA families through accurate counselling, rich resource pool, patient advocacy and various direct family support services. We are extensively working to empower SMA patients and enabling them to access existing services.</p>
+      <p class="mt-8 pb-32">
+        <a href="#focus" class="w-full md:w-80 px-8 py-3 rounded-3xl text-lg bg-white text-pfont border-2 border-black text-center drop-shadow-lg hover:bg-lime-200 hover:border-2 font-semibold">Read More <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </p>
+    </div>
+  </div>
+
+  <!-- foundation key -->
+  <div id="focus" class="mb-16">
+    <div class=" text-center px-4 sm:px-6 lg:px-8 mb-12">
+      <h1 class="mb-4 text-2xl lg:text-4xl font-bold underline">Focus of Cure SMA Foundation</h1>
+      <p class="text-lg mb-2 font-semibold">The foundation likely focuses on several key areas:</p>      
+      <p class="text-lg mb-2">Organizations like Cure SMA Bangladesh Foundation play a crucial role in improving the quality of life for SMA patients and their families by providing support, raising awareness, and advocating for better healthcare services.</p>      
+    </div>
+
+    <div class="px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 ">
+      <div class="flex flex-col items-center text-center">
+        <div class="h-40 w-40 border-2 rounded-full border-pColor mb-4 flex items-center justify-center">
+          <img class="mx-auto" src="./src/images/fnd-focus-1.png" alt="cure-sma-bd-awareness-and-education">
+        </div>
+        <h2 class="text-lg font-semibold text-pColor">Awareness and Education</h2>
+        <div>
+          <p>Raising awareness about SMA within Bangladesh, educating the public and healthcare professionals about the condition, its symptoms, and available treatments.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <div class="h-40 w-40 border-2 rounded-full border-pColor mb-4 flex items-center justify-center">
+          <img class="mx-auto" src="./src/images/fnd-focus-2.png" alt="cure-sma-bd-awareness-and-education">
+        </div>
+        <h2 class="text-lg font-semibold text-pColor">Support Services</h2>
+        <div>
+          <p>Providing support to individuals and families affected by SMA, including emotional support, information on care options, and connecting families with resources.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <div class="h-40 w-40 border-2 rounded-full border-pColor mb-4 flex items-center justify-center">
+          <img class="mx-auto" src="./src/images/fnd-focus-3.png" alt="cure-sma-bd-awareness-and-education">
+        </div>
+        <h2 class="text-lg font-semibold text-pColor">Advocacy</h2>
+        <div>
+          <p>Advocating for improved healthcare services and access to treatment for SMA patients in Bangladesh. This might involve lobbying for inclusion of SMA treatments in healthcare policies and programs.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <div class="h-40 w-40 border-2 rounded-full border-pColor mb-4 flex items-center justify-center">
+          <img class="mx-auto" src="./src/images/fnd-focus-4.png" alt="cure-sma-bd-awareness-and-education">
+        </div>
+        <h2 class="text-lg font-semibold text-pColor">Research</h2>
+        <div>
+          <p>Supporting or conducting research initiatives aimed at better understanding SMA, improving treatment options, and ultimately finding a cure.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center text-center">
+        <div class="h-40 w-40 border-2 rounded-full border-pColor mb-4 flex items-center justify-center">
+          <img class="mx-auto" src="./src/images/fnd-focus-5.png" alt="cure-sma-bd-awareness-and-education">
+        </div>
+        <h2 class="text-lg font-semibold text-pColor">Fundraising</h2>
+        <div>
+          <p>Organizing fundraising events and campaigns to support the foundation's activities and initiatives.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- mission vision -->
+  <div class="mb-20 bg-[#F2F2F3] py-10">
+    <div class="text-center">
+      <h1 class="mb-4 text-2xl lg:text-4xl font-bold underline">Vision and mission</h1>
+      <p class="text-base lg:text-xl px-4 md:px-8">Cure SMA Bangladesh has played a significant role in introducing SMA treatment in Bangladesh. We are relentlessly working with all the stakeholders to make the drug available to all SMA patients.</p>
+    </div>
+
+    <div class="mt-8 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 px-4 md:px-8">
+      <div class="text-center bg-white rounded-2xl shadow-md shadow-yColor text-pfont mb-4">
+        <h2 class="text-2xl font-bold py-4"><i class="fa-solid fa-vector-square fa-beat"></i> Mission</h2>
+        <h2 class="border-4 border-pColor"></h2>
+        <h4 class="text-base leading-tight p-6 text-justify">We are dedicated to bringing the treatment and cure for SMA to Bangladesh, making the related healthcare available, all-encompassing, and insured for all, while creating awareness about SMA and the impact of genetic screening so that we can eventually reach to a point where there will be no genetic disease in the world.</h4>
+      </div>
+
+      <div class="text-center bg-white rounded-2xl shadow-md shadow-yColor text-pfont mb-4">
+        <h2 class="text-2xl font-bold py-4"><i class="fa-solid fa-glasses fa-flip"></i> Vision</h2>
+        <h2 class="border-4 border-pColor"></h2>
+        <h4 class="text-base leading-tight p-6 text-justify">Cure SMA Bangladesh dreams of an SMA-free world and subsequent universal healthcare for all.</h4>
+      </div>
+
+      <div class="text-center bg-white rounded-2xl shadow-md shadow-yColor text-pfont mb-4">
+        <h2 class="text-2xl font-bold py-4"><i class="fa-brands fa-staylinked fa-beat-fade"></i> Integrity</h2>
+        <h2 class="border-4 border-pColor"></h2>
+        <h4 class="text-base leading-tight p-6 text-justify">We, at Cure SMA Bangladesh, carry out all our work with the greatest accountability, transparency, and obligation.</h4>
+      </div>
+
+      <div class="text-center bg-white rounded-2xl shadow-md shadow-yColor text-pfont mb-4">
+        <h2 class="text-2xl font-bold py-4"><i class="fa-solid fa-life-ring fa-spin"></i> Compassion</h2>
+        <h2 class="border-4 border-pColor"></h2>
+        <h4 class="text-base leading-tight p-6 text-justify">According to the ‘By-Laws’ of Cure SMA Bangladesh, no person is ever unaided in the fight against this dreadful ailment. We offer total care and support to people affected by SMA, while connecting with them openly and honestly, providing them with the correct information and required data.</h4>
+      </div>
+
+      <div class="text-center bg-white rounded-2xl shadow-md shadow-yColor text-pfont mb-4">
+        <h2 class="text-2xl font-bold py-4"><i class="fa-solid fa-group-arrows-rotate fa-beat"></i> Collaboration</h2>
+        <h2 class="border-4 border-pColor"></h2>
+        <h4 class="text-base leading-tight p-6 text-justify">All our works are defined and determined by the direct or indirect inputs of the SMA community. Our achievements, regardless of scale, would not have been possible without the valuable contributions of our researchers, doctors, and SMA families. Currently, we have collaborations with Cure SMA USA, SMA Europe, Cure SMA Poland, Cure SMA India, Bangladesh Shishu Hospital & Institute, National Institute of Neurosciences & Hospital, Bangabandhu Sheikh Mujib Medical University (BSMMU), BIRDEM General Hospital, and Roche Bangladesh Ltd.</h4>
       </div>
     </div>
+  </div>
+
+  <!-- current activities -->
+  <div class="mb-20 mb-10">
+    <div class="text-center">
+      <h1 class="mb-10 text-2xl lg:text-4xl font-bold underline">Current Activities</h1>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-10 mx-4 md:mx-8">
+      <!-- left side -->
+      <div class="w-full md:w-1/2 drop-shadow-lg">
+        <div class="lg:h-32 bg-pColor/20 px-6 md:px-10 py-5 rounded-xl lg:rounded-tr-full mb-5  border-r-4 border-l-8 border-pColor">
+          <h2 class="text-xl md:text-2xl font-bold">Preparation of Details</h2>
+          <h2 class="text-lg md:text-xl">Patient Database</h2>
+        </div>
     
-    <!-- photo gallery -->
-    <div class="flex flex-col items-center justify-center font-sans my-10">
-      <!-- category name -->
-      <h1 class="mb-4 text-2xl underline text-pColor font-bold">Cure SMA Bangladesh</h1>
-
-      <!-- Gallery -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mx-auto px-8 my-10">
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
+        <div class="lg:h-32 bg-[#F2F2F3] px-6 md:px-10 py-5 rounded-xl lg:rounded-tr-full mb-5 border-r-4 border-l-8 border-pColor">
+          <h2 class="text-xl md:text-2xl font-bold">Build SMA Awareness</h2>
+          <h2 class="text-lg md:text-xl">Publications, Workshops, Training, Seminar & Social Networking</h2>
         </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
+    
+        <div class="lg:h-32 bg-pColor/20 px-6 md:px-10 py-5 rounded-xl lg:rounded-tr-full mb-5 border-r-4 border-l-8 border-pColor">
+          <h2 class="text-xl md:text-2xl font-bold">Patients Advocacy</h2>
+          <h2 class="text-lg md:text-xl">Meet SMA families to know more about the challenges & remedial actions</h2>
         </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
+    
+        <div class="lg:h-32 bg-[#F2F2F3] px-6 md:px-10 py-5 rounded-xl lg:rounded-tr-full mb-5 border-r-4 border-l-8 border-pColor">
+          <h2 class="text-xl md:text-2xl font-bold">Formation of Advisory & <br> Health Care Provider Team</h2>
         </div>
       </div>
-
-      <!-- canonical number -->
-      <div class="flex justify-center mt-4">
-        <button class="btn join-item">1</button>
-        <button class="btn join-item">2</button>
-        <button class="btn join-item btn-disabled">...</button>
-        <button class="btn join-item">4</button>
-        <button class="btn join-item">5</button>
+    
+      <!-- right side -->
+      <div class="w-full md:w-1/2 drop-shadow-lg">
+        <div class="lg:h-32 bg-pColor/20 px-6 md:px-10 py-5 rounded-xl lg:rounded-tl-full mb-5 text-right border-l-4 border-r-8 border-pColor">
+          <h2 class="text-xl xl:text-2xl font-bold">Ensure Effective Involvement</h2>
+          <h2 class="text-lg md:text-xl">Government, hospitals, doctors, therapists, pharmaceuticals, NGOs</h2>
+        </div>
+    
+        <div class="lg:h-32 bg-[#F2F2F3] px-6 md:px-10 py-5 rounded-xl lg:rounded-tl-full mb-5 text-right border-l-4 border-r-8 border-pColor">
+          <h2 class="text-xl md:text-2xl font-bold">Connect with International <br> SMA Community</h2>
+        </div>
+    
+        <div class="lg:h-32 bg-pColor/20 px-6 md:px-10 py-5 rounded-xl lg:rounded-tl-full mb-5 text-right border-l-4 border-r-8 border-pColor">
+          <h2 class="text-xl md:text-2xl font-bold">Ensure Complete Therapy <br class="hidden md:block"> Facilities</h2>
+        </div>
       </div>
     </div>
+  </div>
+    
+  <!-- Download About SMA Leaflet -->
+  <div class="px-8 mb-20 text-center">
+    <button class="px-4 py-3 rounded-xl bg-lime-200 text-pfont hover:drop-shadow-lg hover:bg-cyan-500 hover:translate-y-1 hover:duration-[.5s]">
+      <a class="text-2xl md:text-4xl leading-normal" href="./src/doc/About SMA.pdf"><span class="font-bold"><i class="fa-solid fa-download fa-bounce"></i> Download: </span>About SMA Leaflet</a>
+    </button>
+  </div>
 
-    <!-- Image Viewer Modal -->
-    <div id="imageViewer" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
-      <div class="relative">
-        <img id="viewerImage" class="max-w-full max-h-full object-contain rounded-md">
-        <button onclick="closeImageViewer()" class="absolute top-4 right-4 bg-white text-red-500 p-2 rounded-full shadow-md hover:bg-gray-300 transition-colors duration-300">
-          &times;
-        </button>
-        <button onclick="previousImage()" class="absolute left-4 inset-y-1/2 transform -translate-y-1/2 text-white text-3xl">
-          &larr;
-        </button>
-        <button onclick="nextImage()" class="absolute right-4 inset-y-1/2 transform -translate-y-1/2 text-white text-3xl">
-          &rarr;
-        </button>
-      </div>
+  <!-- social share for body position -->
+  <div class="fixed top-1/2 right-0 transform -translate-y-1/2 mt-6 mr-4 sm:mr-6 md:mr-10 lg:mr-12 ease-in-out duration-1000">
+    <div class="w-10 hover:w-14 text-center bg-lime-100/50 border-2 border-pColor rounded-lg drop-shadow-xl hover:bg-slate-200 ease-in-out duration-30">
+      <p><i class="fa-solid fa-thumbtack text-red-600 py-2 text-lg sm:text-xl md:text-2xl drop-shadow-lg"></i></p>
+      <hr><hr><hr>
+      <p><a href="#"><i class="fab social-a fa-facebook py-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#3b5998] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+      <p><a href="#"><i class="fab social-a fa-linkedin text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#0A66C2] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+      <p><a href="#"><i class="fab social-a fa-youtube py-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#CD201F] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+      <p><a href="#"><i class="fab social-a fa-instagram pb-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-orange-500 hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
+      <p><a href="#"><i class="fab social-a fa-whatsapp pb-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#25D366] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
     </div>
-
-    <!-- social share for body position -->
-    <div class="fixed top-1/2 right-0 transform -translate-y-1/2 mt-6 mr-4 sm:mr-6 md:mr-10 lg:mr-12 ease-in-out duration-1000">
-      <div class="w-10 hover:w-14 text-center bg-lime-100/50 border-2 border-pColor rounded-lg drop-shadow-xl hover:bg-slate-200 ease-in-out duration-30">
-        <p><i class="fa-solid fa-thumbtack text-red-600 py-2 text-lg sm:text-xl md:text-2xl drop-shadow-lg"></i></p>
-        <hr><hr><hr>
-        <p><a href="#"><i class="fab social-a fa-facebook py-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#3b5998] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
-        <p><a href="#"><i class="fab social-a fa-linkedin text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#0A66C2] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
-        <p><a href="#"><i class="fab social-a fa-youtube py-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#CD201F] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
-        <p><a href="#"><i class="fab social-a fa-instagram pb-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-orange-500 hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
-        <p><a href="#"><i class="fab social-a fa-whatsapp pb-2 text-lg sm:text-xl md:text-2xl hover:text-3xl lg:hover:text-5xl hover:text-[#25D366] hover:drop-shadow-xl ease-in-out duration-1000"></i></a></p>
-      </div>
-    </div>
+  </div>
+  
   </main>
 
   <footer class="pt-4 bg-gradient-to-b from-green-600 to-black" style="border-radius: 120px 0px 0px;">
@@ -557,39 +584,9 @@
   </footer>
 
 
-  <!-- others -->
-  <script>
-    const images = [
-      "./src/images/single_child_2.png",
-      "./src/images/single_child_1.png",
-      "./src/images/1. Nabonee.png"
-    ];
+<!-- others -->
 
-    let currentIndex = 0;
-
-    function openImageViewer(src, index) {
-      const viewer = document.getElementById('imageViewer');
-      const viewerImage = document.getElementById('viewerImage');
-      currentIndex = index;
-      viewerImage.src = src;
-      viewer.classList.remove('hidden');
-    }
-
-    function closeImageViewer() {
-      const viewer = document.getElementById('imageViewer');
-      viewer.classList.add('hidden');
-    }
-
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      document.getElementById('viewerImage').src = images[currentIndex];
-    }
-
-    function previousImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      document.getElementById('viewerImage').src = images[currentIndex];
-    }
-  </script>  
+  
     
 </body>
 </html>
