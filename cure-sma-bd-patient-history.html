@@ -81,29 +81,6 @@
       background: rgb(255,255,255);
       background: linear-gradient(184deg, rgba(255,255,255,0.31976540616246496) 0%, rgba(255,255,255,0) 100%);
     }
-
-    /* progress bar */
-    @keyframes fadein {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-
-    @keyframes progress-bar {
-      from { width: 0%; }
-      to { width: 50%; }
-    }
-
-    .fadein {
-      animation: fadein 4s;
-    }
-
-    .progress-bar-animation {
-      animation: progress-bar 2s ease forwards;
-    }
-
-    .bg-gradient-custom {
-      background: linear-gradient(to bottom, #1c314a, #27425f);
-    }
     </style>
 
 </head>
@@ -365,7 +342,7 @@
        </div>
       
       <!-- patient card -->
-      <div id="child_Section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 px-8 pb-20 py-10 drop-shadow-md hover:drop-shadow-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 px-8 pb-20 py-10 drop-shadow-md hover:drop-shadow-lg">
         <div class="bg-gray-100 border-b-4 border-pColor hover:border-2">
           <div>
             <img src="./src/images/Nabonee.jpg" alt="Cure SMA Bangladesh"/>
