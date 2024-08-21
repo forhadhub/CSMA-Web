@@ -153,7 +153,7 @@
                     </ul>
                   </li>
                   <li><a href="cure-sma-bd-meeting.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Conference/Meetings</a></li>
-                  <li><a href="cure-sma-bd-awarness-activities.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Awareness Activities</a></li>
+                  <li><a href="cure-sma-bd-awareness-activities.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Awareness Activities</a></li>
                 </ul>
               </li>
               
@@ -220,7 +220,7 @@
                   </ul>
                 </li>
                 <li><a href="cure-sma-bd-meeting.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Conference/Meetings</a></li>
-                <li><a href="cure-sma-bd-awarness-activities.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Awareness Activities</a></li>
+                <li><a href="cure-sma-bd-awareness-activities.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Awareness Activities</a></li>
               </ul>
             </li>
             
@@ -351,18 +351,32 @@
     <div class="breadcrumbs text-lg bg-pColor text-white px-8 py-0 ">
       <ul>
         <li><a class="underline" href="index.html">Home</a></li>
-        <li>Gallery</li>
-        <li>Photos</li>
+        <li>Support</li>
+        <li>Meeting</li>
       </ul>
     </div>
 
+
+    <!-- Banner -->
+    <div class="flex justify-between px-8 mx:px-16 items-center bg-[#000009] border-b-[12px] lg:border-b-[25px] border-[#08A268] drop-shadow-lg">
+      <div class="text-white font-semibold px-4 lg:pr-16">
+        <h1 class="text-xl md:text-4xl lg:text-7xl drop-shadow-lg">SMA</h1>
+        <h1 class="text-xl md:text-4xl lg:text-5xl drop-shadow-lg">Conferences / Meetings</h1>
+      </div>
+      <div>
+        <img src="./src/images/conference-banner-image.jpg" alt="cure-sma-bd-multidisciplinary-clinic-banner" class="w-[350px] object-cover">
+      </div>
+      
+    </div>
+
     <!-- category selection -->
-    <div class="flex flex-col items-center justify-center bg-pColor/25 p-6 skeleton">
+    <div class="flex flex-col items-center justify-center bg-[#08A268]/20 p-6">
       <div class="relative w-80">
-        <label for="photo_category" class="block text-xl font-medium text-pColor mb-2 text-center">Photo Category</label>
-        <select id="photo_category" name="photo_category" class="block w-full border border-pColor/50 h-10 rounded-md shadow-sm focus:ring-coral focus:border-coral sm:text-sm">
-          <option value="" disabled selected>All Photos</option>
-          <option value="Patients">Patients</option>
+        <label for="photo_category" class="block text-xl font-medium text-[#08A268] mb-2 text-center">Select Activity</label>
+        <select id="photo_category" name="photo_category" class="block w-full bg-green-100/50 h-10 rounded-md shadow-sm text-lg font-semibold text-[#08A268] max-h-32 overflow-y-auto">
+          <option value="" disabled selected>Select</option>
+          <option value="All Awareness">All Meetings</option>
+          <option value="Rare Disease Day-2024">Rare Disease Day-2024</option>
           <option value="Committee">Committee</option>
           <option value="Meeting">Meeting</option>
           <option value="Events 1">Events 1</option>
@@ -372,146 +386,293 @@
           <option value="Treatment">Treatment</option>
         </select>
       </div>
-    </div>
+    </div>   
+
+    <!-- category name -->
+    <h1 class="pt-10 text-2xl text-[#08A268] font-bold text-center">Category Name: <span>Conference-2024</span></h1>
     
-    <!-- photo gallery -->
-    <div class="flex flex-col items-center justify-center font-sans my-10">
-      <!-- category name -->
-      <h1 class="mb-4 text-2xl underline text-pColor font-bold">Cure SMA Bangladesh</h1>
-
-      <!-- Gallery -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mx-auto px-8 my-10">
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
-        </div>
-
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/1. Nabonee.png" alt="cure sma-nabonee" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Nabonee"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/3. Two brothers.png" alt="cure sma-two brothers" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Two Brothers"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/4. SHAHREEN.png" alt="cure sma-shahreen" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Shahreen"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/child_say_1.png" alt="cure sma-child say" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 1"</p>
-        </div>
-        <div class="relative group flex flex-col items-center border-2 border-black p-2 rounded-md shadow-md hover:border-coral hover:shadow-lg">
-          <img class="w-full rounded-md filter grayscale-[50%] transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105 cursor-pointer" src="./src/images/single_child_2.png" alt="cure sma-child say 2" onclick="openImageViewer(this.src, 0)">
-          <p class="mt-2 text-center italic">"Child Say 2"</p>
+    <!-- meeting videos -->
+    <div class="mx-16 grid grid-cols-1 xl:grid-cols-2 gap-4 py-10">
+      <!-- meeting Card 1 -->
+      <div class="drop-shadow-lg hover:shadow-xl p-2 border-2 bg-green-100/50">
+        <div class="flex flex-col lg:flex-row bg-white/75 rounded-lg drop-shadow-lg items-center lg:pr-2 h-full transform transition-transform duration-1000 hover:bg-green-100/50">
+          
+          <div class="w-full rounded-lg overflow-hidden shadow-lg transform transition-transform duration-1000 hover:scale-105">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/wmKtQ_aRdqg?si=wshrAdfFZmYv3h5_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      
+          <div class="text-center lg:text-left px-4 w-full lg:w-2/5">
+            <!-- Title -->
+            <h2 class="text-lg lg:text-2xl font-semibold text-green-600">2024 HCU Conference Keynote</h2>
+            <div class="py-2">
+              <p class="font-semibold">Meeting Date:</p>
+              <p>31 July 2024</p>
+            </div>
+            <div>
+              <p class="font-semibold">Meeting Type:</p>
+              <p>Live Programme</p>
+            </div>
+            <div class="py-2">
+              <p class="font-semibold">Sponsor/Arrange by:</p>
+              <p>HCU Network America</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- canonical number -->
-      <div class="flex justify-center mt-4">
-        <button class="btn join-item">1</button>
-        <button class="btn join-item">2</button>
-        <button class="btn join-item btn-disabled">...</button>
-        <button class="btn join-item">4</button>
-        <button class="btn join-item">5</button>
+      
+      <!-- meeting card 2 -->
+      <div class="drop-shadow-lg hover:shadow-xl p-2 border-2 bg-green-100/50">
+        <div class="flex flex-col lg:flex-row bg-white/75 rounded-lg drop-shadow-lg items-center lg:pr-2 h-full transform transition-transform duration-1000 hover:bg-green-100/50">
+          
+          <div class="w-full lg:w-3/5 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-1000 hover:scale-105">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JQC4nW_oQHU?si=ZIgDlk_ydxOZpl0O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      
+          <div class="text-center lg:text-left px-4 w-full lg:w-2/5">
+            <!-- Title -->
+            <h2 class="text-lg lg:text-2xl font-semibold text-green-600"> Challenge of Rare Disease in the Family</h2>
+            <div class="py-2">
+              <p class="font-semibold">Meeting Date:</p>
+              <p>24 July 2024</p>
+            </div>
+            <div>
+              <p class="font-semibold">Meeting Type:</p>
+              <p>Online</p>
+            </div>
+            <div class="py-2">
+              <p class="font-semibold">Sponsor/Arrange by:</p>
+              <p>CTNNB1 Foundation</p>
+            </div>
+          </div>
+        </div>
       </div>
+      
+      <!-- meeting Card 3 -->
+      <div class="drop-shadow-lg hover:shadow-xl p-2 border-2 bg-green-100/50">
+        <div class="flex flex-col lg:flex-row bg-white/75 rounded-lg drop-shadow-lg items-center lg:pr-2 h-full transform transition-transform duration-1000 hover:bg-green-100/50">
+          
+          <div class="w-full lg:w-3/5 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-1000 hover:scale-105">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/wmKtQ_aRdqg?si=wshrAdfFZmYv3h5_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      
+          <div class="text-center lg:text-left px-4 w-full lg:w-2/5">
+            <!-- Title -->
+            <h2 class="text-lg lg:text-2xl font-semibold text-green-600">2024 HCU Conference Keynote</h2>
+            <div class="py-2">
+              <p class="font-semibold">Meeting Date:</p>
+              <p>31 July 2024</p>
+            </div>
+            <div>
+              <p class="font-semibold">Meeting Type:</p>
+              <p>Live Programme</p>
+            </div>
+            <div class="py-2">
+              <p class="font-semibold">Sponsor/Arrange by:</p>
+              <p>HCU Network America</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- meeting card 4 -->
+      <div class="drop-shadow-lg hover:shadow-xl p-2 border-2 bg-green-100/50">
+        <div class="flex flex-col lg:flex-row bg-white/75 rounded-lg drop-shadow-lg items-center lg:pr-2 h-full transform transition-transform duration-1000 hover:bg-green-100/50">
+          
+          <div class="w-full lg:w-3/5 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-1000 hover:scale-105">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JQC4nW_oQHU?si=ZIgDlk_ydxOZpl0O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      
+          <div class="text-center lg:text-left px-4 w-full lg:w-2/5">
+            <!-- Title -->
+            <h2 class="text-lg lg:text-2xl font-semibold text-green-600"> Challenge of Rare Disease in the Family</h2>
+            <div class="py-2">
+              <p class="font-semibold">Meeting Date:</p>
+              <p>24 July 2024</p>
+            </div>
+            <div>
+              <p class="font-semibold">Meeting Type:</p>
+              <p>Online</p>
+            </div>
+            <div class="py-2">
+              <p class="font-semibold">Sponsor/Arrange by:</p>
+              <p>CTNNB1 Foundation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <!-- meeting Card 5 -->
+      <div class="drop-shadow-lg hover:shadow-xl p-2 border-2 bg-green-100/50">
+        <div class="flex flex-col lg:flex-row bg-white/75 rounded-lg drop-shadow-lg items-center lg:pr-2 h-full transform transition-transform duration-1000 hover:bg-green-100/50">
+          
+          <div class="w-full lg:w-3/5 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-1000 hover:scale-105">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/wmKtQ_aRdqg?si=wshrAdfFZmYv3h5_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      
+          <div class="text-center lg:text-left px-4 w-full lg:w-2/5">
+            <!-- Title -->
+            <h2 class="text-lg lg:text-2xl font-semibold text-green-600">2024 HCU Conference Keynote</h2>
+            <div class="py-2">
+              <p class="font-semibold">Meeting Date:</p>
+              <p>31 July 2024</p>
+            </div>
+            <div>
+              <p class="font-semibold">Meeting Type:</p>
+              <p>Live Programme</p>
+            </div>
+            <div class="py-2">
+              <p class="font-semibold">Sponsor/Arrange by:</p>
+              <p>HCU Network America</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- meeting card 6 -->
+      <div class="drop-shadow-lg hover:shadow-xl p-2 border-2 bg-green-100/50">
+        <div class="flex flex-col lg:flex-row bg-white/75 rounded-lg drop-shadow-lg items-center lg:pr-2 h-full transform transition-transform duration-1000 hover:bg-green-100/50">
+          
+          <div class="w-full lg:w-3/5 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-1000 hover:scale-105">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JQC4nW_oQHU?si=ZIgDlk_ydxOZpl0O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      
+          <div class="text-center lg:text-left px-4 w-full lg:w-2/5">
+            <!-- Title -->
+            <h2 class="text-lg lg:text-2xl font-semibold text-green-600"> Challenge of Rare Disease in the Family</h2>
+            <div class="py-2">
+              <p class="font-semibold">Meeting Date:</p>
+              <p>24 July 2024</p>
+            </div>
+            <div>
+              <p class="font-semibold">Meeting Type:</p>
+              <p>Online</p>
+            </div>
+            <div class="py-2">
+              <p class="font-semibold">Sponsor/Arrange by:</p>
+              <p>CTNNB1 Foundation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <!-- meeting Card 7 -->
+      <div class="drop-shadow-lg hover:shadow-xl p-2 border-2 bg-green-100/50">
+        <div class="flex flex-col lg:flex-row bg-white/75 rounded-lg drop-shadow-lg items-center lg:pr-2 h-full transform transition-transform duration-1000 hover:bg-green-100/50">
+          
+          <div class="w-full lg:w-3/5 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-1000 hover:scale-105">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/wmKtQ_aRdqg?si=wshrAdfFZmYv3h5_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      
+          <div class="text-center lg:text-left px-4 w-full lg:w-2/5">
+            <!-- Title -->
+            <h2 class="text-lg lg:text-2xl font-semibold text-green-600">2024 HCU Conference Keynote</h2>
+            <div class="py-2">
+              <p class="font-semibold">Meeting Date:</p>
+              <p>31 July 2024</p>
+            </div>
+            <div>
+              <p class="font-semibold">Meeting Type:</p>
+              <p>Live Programme</p>
+            </div>
+            <div class="py-2">
+              <p class="font-semibold">Sponsor/Arrange by:</p>
+              <p>HCU Network America</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- meeting card 8 -->
+      <div class="drop-shadow-lg hover:shadow-xl p-2 border-2 bg-green-100/50">
+        <div class="flex flex-col lg:flex-row bg-white/75 rounded-lg drop-shadow-lg items-center lg:pr-2 h-full transform transition-transform duration-1000 hover:bg-green-100/50">
+          
+          <div class="w-full lg:w-3/5 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-1000 hover:scale-105">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JQC4nW_oQHU?si=ZIgDlk_ydxOZpl0O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      
+          <div class="text-center lg:text-left px-4 w-full lg:w-2/5">
+            <!-- Title -->
+            <h2 class="text-lg lg:text-2xl font-semibold text-green-600"> Challenge of Rare Disease in the Family</h2>
+            <div class="py-2">
+              <p class="font-semibold">Meeting Date:</p>
+              <p>24 July 2024</p>
+            </div>
+            <div>
+              <p class="font-semibold">Meeting Type:</p>
+              <p>Online</p>
+            </div>
+            <div class="py-2">
+              <p class="font-semibold">Sponsor/Arrange by:</p>
+              <p>CTNNB1 Foundation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <!-- meeting Card 9 -->
+      <div class="drop-shadow-lg hover:shadow-xl p-2 border-2 bg-green-100/50">
+        <div class="flex flex-col lg:flex-row bg-white/75 rounded-lg drop-shadow-lg items-center lg:pr-2 h-full transform transition-transform duration-1000 hover:bg-green-100/50">
+          
+          <div class="w-full lg:w-3/5 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-1000 hover:scale-105">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/wmKtQ_aRdqg?si=wshrAdfFZmYv3h5_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      
+          <div class="text-center lg:text-left px-4 w-full lg:w-2/5">
+            <!-- Title -->
+            <h2 class="text-lg lg:text-2xl font-semibold text-green-600">2024 HCU Conference Keynote</h2>
+            <div class="py-2">
+              <p class="font-semibold">Meeting Date:</p>
+              <p>31 July 2024</p>
+            </div>
+            <div>
+              <p class="font-semibold">Meeting Type:</p>
+              <p>Live Programme</p>
+            </div>
+            <div class="py-2">
+              <p class="font-semibold">Sponsor/Arrange by:</p>
+              <p>HCU Network America</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- meeting card 10 -->
+      <div class="drop-shadow-lg hover:shadow-xl p-2 border-2 bg-green-100/50">
+        <div class="flex flex-col lg:flex-row bg-white/75 rounded-lg drop-shadow-lg items-center lg:pr-2 h-full transform transition-transform duration-1000 hover:bg-green-100/50">
+          
+          <div class="w-full lg:w-3/5 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-1000 hover:scale-105">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JQC4nW_oQHU?si=ZIgDlk_ydxOZpl0O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      
+          <div class="text-center lg:text-left px-4 w-full lg:w-2/5">
+            <!-- Title -->
+            <h2 class="text-lg lg:text-2xl font-semibold text-green-600"> Challenge of Rare Disease in the Family</h2>
+            <div class="py-2">
+              <p class="font-semibold">Meeting Date:</p>
+              <p>24 July 2024</p>
+            </div>
+            <div>
+              <p class="font-semibold">Meeting Type:</p>
+              <p>Online</p>
+            </div>
+            <div class="py-2">
+              <p class="font-semibold">Sponsor/Arrange by:</p>
+              <p>CTNNB1 Foundation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+    <!-- canonical number -->
+    <div class="flex justify-center text-center mb-8">
+      <button class="btn join-item">1</button>
+      <button class="btn join-item">2</button>
+      <button class="btn join-item btn-disabled">...</button>
+      <button class="btn join-item">4</button>
+      <button class="btn join-item">5</button>
     </div>
 
-    <!-- Image Viewer Modal -->
-    <div id="imageViewer" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
-      <div class="relative">
-        <img id="viewerImage" class="max-w-full max-h-full object-contain rounded-md">
-        <button onclick="closeImageViewer()" class="absolute top-4 right-4 bg-white text-red-500 p-2 rounded-full shadow-md hover:bg-gray-300 transition-colors duration-300">
-          &times;
-        </button>
-        <button onclick="previousImage()" class="absolute left-4 inset-y-1/2 transform -translate-y-1/2 text-white text-3xl">
-          &larr;
-        </button>
-        <button onclick="nextImage()" class="absolute right-4 inset-y-1/2 transform -translate-y-1/2 text-white text-3xl">
-          &rarr;
-        </button>
-      </div>
-    </div>
 
     <!-- social share for body position -->
     <div class="fixed top-1/2 right-0 transform -translate-y-1/2 mt-6 mr-4 sm:mr-6 md:mr-10 lg:mr-12 ease-in-out duration-1000">
@@ -605,9 +766,16 @@
   <!-- others -->
   <script>
     const images = [
-      "./src/images/single_child_2.png",
-      "./src/images/single_child_1.png",
-      "./src/images/1. Nabonee.png"
+      "./src/images/aware-activitiy-1.jpeg",
+      "./src/images/aware-activitiy-2.jpeg",
+      "./src/images/aware-activitiy-3.jpeg",
+      "./src/images/aware-activitiy-4.jpeg",
+      "./src/images/aware-activitiy-5.jpeg",
+      "./src/images/aware-activitiy-6.jpeg",
+      "./src/images/aware-activitiy-7.jpeg",
+      "./src/images/aware-activitiy-8.jpeg",
+      "./src/images/aware-activitiy-9.jpeg"
+
     ];
 
     let currentIndex = 0;
