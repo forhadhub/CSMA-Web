@@ -447,10 +447,10 @@
     </div>
 
     <!-- Image Viewer Modal -->
-    <div id="imageViewer" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
-      <div class="relative">
+    <div id="imageViewer" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden" onclick="closeImageViewer()">
+      <div class="relative" onclick="event.stopPropagation();">
         <img id="viewerImage" class="max-w-full max-h-full object-contain rounded-md">
-        <button onclick="closeImageViewer()" class="absolute top-4 right-4 bg-white text-red-500 p-2 rounded-full  hover:bg-gray-300 transition-colors duration-300">
+        <button onclick="closeImageViewer()" class="absolute top-4 right-4 bg-white text-red-500 p-2 rounded-full hover:bg-gray-300 transition-colors duration-300">
           &times;
         </button>
         <button onclick="previousImage()" class="absolute left-4 inset-y-1/2 transform -translate-y-1/2 text-white text-3xl">
@@ -461,6 +461,7 @@
         </button>
       </div>
     </div>
+
 
     <!-- social share for body position -->
     <div class="fixed top-1/2 right-0 transform -translate-y-1/2 mt-6 mr-4 sm:mr-6 md:mr-10 lg:mr-12 ease-in-out duration-1000">
