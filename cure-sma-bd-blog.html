@@ -121,71 +121,77 @@
 
     <!-- navbar section-->
     <nav>
-      <div class="flex flex-row justify-between bg-lime-200 py-0 lg:px-8 md:px-8 font-poppins text-pfont font-medium text-base shadow-lg shadow-white/40 navbar bg-pblack bg-opacity-55">
-        <div class="">
+      <div class="flex flex-row justify-between bg-lime-200 py-2 lg:px-8 md:px-8 font-poppins text-pfont font-medium text-base shadow-lg shadow-white/40 navbar bg-pblack lg:bg-opacity-55">
+        <div>
           <!-- mobile menu -->
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-lime-200 rounded-box w-80 bg-pblack bg-opacity-55 border-r-2 border-pred shadow-lg shadow-pColor/40">
-              <li><a href="index.html" class="hover:text-pColor">Home</a></li>
-              <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
-                <a href="#" class="hover:text-pColor">About <i class="fa-solid fa-angle-down"></i></a>
-                <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
-                  <li><a href="cure-sma-bd-about-sma.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About SMA</a></li>
-                  <li><a href="cure-sma-bangladesh.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About Cure SMA Bangladesh</a></li>
-                  <li><a href="cure-sma-bd-executive-committee.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Executive Committee</a></li>
-                </ul>
-              </li>
-              <li><a href="cure-sma-bd-health-care-team.html" class="hover:text-pColor">Health Care Team</a></li>
-              <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
-                <a href="#" class="hover:text-pColor">Care <i class="fa-solid fa-angle-down"></i></a>
-                <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
-                  <li><a href="cure-sma-bd-general-care-guideline.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  General Care Guideline</a></li>
-                  <li><a href="cure-sma-bd-care-for-winter-season.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Care for Winter Season</a></li>
-                  <li><a href="cure-sma-bd-care-for-nutrition-care.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Nutrition</a></li>
-                </ul>
-              </li>
-              <li class="relative group hover:translate-y-1 hover:duration-[2s]">
-                <a href="#" class="hover:text-pColor">Support <i class="fa-solid fa-angle-down"></i></a>
-                <ul class="absolute left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg">
-                  <li class="relative group">
-                    <a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white" onclick="toggleSubmenu(event)">o Multidisciplinary Clinic <i class="fa-solid fa-angle-right"></i></a>
-                    <ul class="absolute left-full top-0 hidden bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg">
-                      <li><a href="cure-sma-bd-about-multidisciplinary-clinic.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o About multidisciplinary Clinic</a></li>
-                      <li><a href="cure-sma-bd-address-multidisciplinary-clinic.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o Address of multidisciplinary Clinic</a></li>
-                      <li><a href="cure-sma-bd-picture-multidisciplinary-clinic.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Picture of multidisciplinary Clinic</a></li>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 mt-4 bg-lime-200 rounded-box w-80 bg-pblack border-r-4 border-pColor drop-shadow-lg">
+                <li class="my-2 border-b-2 border-pColor"><a href="index.html" class="text-lg hover:text-pColor">Home</a></li>
+                <li class="relative group hover:translate-y-1 hover:duration-[2s]">
+                    <a href="#" class="hover:text-pColor text-lg  border-b-2 border-pColor" onclick="toggleSubmenu(event)">About <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="absolute left-6 top-6 hidden bg-pColor rounded-md border-2 border-pColor text-white  text-lg  w-80 p-2 shadow-lg z-[2]">
+                        <li><a href="cure-sma-bd-about-sma.html" class=" text-md my-1 block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white border-b-2 border-white">o About SMA</a></li>
+                        <li><a href="cure-sma-bangladesh.html" class=" text-md my-1 block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white border-b-2 border-white">o About Cure SMA Bangladesh</a></li>
+                        <li><a href="cure-sma-bd-executive-committee.html" class=" text-md my-1 block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white border-b-2 border-white">o Executive Committee</a></li>
                     </ul>
-                  </li>
-                  <li><a href="cure-sma-bd-meeting.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Conference/Meetings</a></li>
-                  <li><a href="cure-sma-bd-awareness-activities.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Awareness Activities</a></li>
-                </ul>
-              </li>
-              
-              <script>
-                function toggleSubmenu(event) {
-                  event.preventDefault(); // Prevent the default link behavior
-                  const submenu = event.currentTarget.nextElementSibling;
-              
-                  // Toggle visibility of the submenu
-                  if (submenu.classList.contains('hidden')) {
-                    submenu.classList.remove('hidden');
-                  } else {
-                    submenu.classList.add('hidden');
-                  }
-                }
-              </script>
-              <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
-                <a href="#" class="hover:text-pColor">Gallery <i class="fa-solid fa-angle-down"></i></a>
-                <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
-                  <li><a href="cure-sma-bd-photos.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Photos</a></li>
-                  <li><a href="cure-sma-bd-videos.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Videos</a></li>
-                </ul>
-              </li>
-              <li class="relative group hover:translate-y-1 hover:duration-[2s] "><a href="cure-sma-bd-contact.html" class="hover:text-pColor">Contact </a></li>
+                </li>
+                <li><a href="cure-sma-bd-health-care-team.html" class="my-2 border-b-2 border-pColor text-lg hover:text-pColor">Health Care Team</a></li>
+                <li class="relative group hover:translate-y-1 hover:duration-[2s]">
+                    <a href="#" class="hover:text-pColor text-lg border-b-2 border-pColor " onclick="toggleSubmenu(event)">Care <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="absolute left-6 top-6 hidden bg-pColor rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg z-[2]">
+                        <li><a href="cure-sma-bd-general-care-guideline.html" class="my-1 text-md block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white border-b-2 border-white">o General Care Guideline</a></li>
+                        <li><a href="cure-sma-bd-care-for-winter-season.html" class="my-1 text-md block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white border-b-2 border-white">o Care for Winter Season</a></li>
+                        <li><a href="cure-sma-bd-care-for-nutrition-care.html" class="my-1 text-md block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white border-b-2 border-white">o Nutrition</a></li>
+                    </ul>
+                </li>
+                <li class="my-2 relative group hover:translate-y-1 hover:duration-[2s]">
+                    <a href="#" class="hover:text-pColor text-lg border-b-2 border-pColor " onclick="toggleSubmenu(event)">Support <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="absolute left-6 top-6 hidden bg-pColor rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg z-[2]">
+                        <li class="relative group my-2">
+                            <a href="#" class=" text-md block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white border-b-2 border-white" onclick="toggleSubmenu(event)">o Multidisciplinary Clinic <i class="fa-solid fa-angle-right"></i></a>
+                            <ul class="absolute left-8 top-0 hidden bg-pColor rounded-md border-2 border-white text-white text-lg w-72 p-2 shadow-lg z-[3] ly-2">
+                                <li><a href="cure-sma-bd-about-multidisciplinary-clinic.html" class="text-md block rounded-xl p-2 hover:bg-pColor hover:text-white">o About multidisciplinary Clinic</a></li>
+                                <li><a href="cure-sma-bd-address-multidisciplinary-clinic.html" class="text-md block rounded-xl p-2 hover:bg-pColor hover:text-white">o Address-multidisciplinary Clinic</a></li>
+                                <li><a href="cure-sma-bd-picture-multidisciplinary-clinic.html" class="text-md block p-2 rounded-xl hover:bg-pColor hover:text-white">o Picture-multidisciplinary Clinic</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cure-sma-bd-meeting.html" class="my-1 text-md block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white border-b-2 border-white">o Conference/Meetings</a></li>
+                        <li><a href="cure-sma-bd-awareness-activities.html" class="my-1 text-md block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Awareness Activities</a></li>
+                    </ul>
+                </li>
+                <li class="relative group hover:translate-y-1 hover:duration-[2s]">
+                    <a href="#" class="py-2 text-lg  hover:text-pColor border-b-2 border-pColor" onclick="toggleSubmenu(event)">Gallery <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="absolute left-6 top-6 hidden bg-pColor rounded-md text-white w-72 p-2 shadow-lg z-[2]">
+                        <li><a href="cure-sma-bd-photos.html" class="my-1 text-md block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white border-b-2 border-white">o Photos</a></li>
+                        <li><a href="cure-sma-bd-videos.html" class="my-1 text-md block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white border-b-2 border-white">o Videos</a></li>
+                    </ul>
+                </li>
+                <li><a href="cure-sma-bd-contact.html" class="text-lg relative group hover:translate-y-1 hover:duration-[2s] text-lg hover:text-pColor">Contact</a></li>
             </ul>
           </div>
+          
+          <script>
+              function toggleSubmenu(event) {
+                  event.preventDefault();
+                  const submenu = event.currentTarget.nextElementSibling;
+          
+                  // Close other open submenus
+                  document.querySelectorAll('.dropdown ul').forEach(ul => {
+                      if (ul !== submenu) {
+                          ul.classList.add('hidden');
+                      }
+                  });
+          
+                  // Toggle the clicked submenu
+                  submenu.classList.toggle('hidden');
+              }
+          </script>  
+        
         <!-- site logo -->
           <div>
             <a href="#">
@@ -193,33 +199,34 @@
             </a>
           </div>  
         </div>
+
         <!-- large display menu -->
-        <div class="navbar-center hidden lg:flex font-poppins px-5">
-          <ul class="flex space-x-4 px-1 lg:text-base gap-6 lg:gap-0 xl:gap-6">
+        <div class="navbar-center hidden lg:flex font-poppins font-semibold text-lg">
+          <ul class="flex space-x-4 px-1 gap-6 lg:gap-0 xl:gap-6">
             <li><a href="index.html" class="hover:text-pColor">Home</a></li>
             <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
-              <a href="#" class="hover:text-pColor">About <i class="fa-solid fa-angle-down"></i></a>
-              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+              <a href="#" class="hover:text-pColor" onclick="toggleSubmenu(event)">About <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor lg:bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
                 <li><a href="cure-sma-bd-about-sma.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About SMA</a></li>
                 <li><a href="cure-sma-bangladesh.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  About Cure SMA Bangladesh</a></li>
                 <li><a href="cure-sma-bd-executive-committee.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Executive Committee</a></li>
               </ul>
             </li>
-            <li><a href="cure-sma-bd-health-care-team.html" class="hover:text-pColor">Health Care Team</a></li>
+            <li><a href="cure-sma-bd-health-care-team.html" class="hover:text-pColor" onclick="toggleSubmenu(event)">Health Care Team</a></li>
             <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
               <a href="#" class="hover:text-pColor">Care <i class="fa-solid fa-angle-down"></i></a>
-              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor lg:bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
                 <li><a href="cure-sma-bd-general-care-guideline.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  General Care Guideline</a></li>
                 <li><a href="cure-sma-bd-care-for-winter-season.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Care for Winter Season</a></li>
                 <li><a href="cure-sma-bd-care-for-nutrition-care.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o  Nutrition</a></li>
               </ul>
             </li>
             <li class="relative group hover:translate-y-1 hover:duration-[2s]">
-              <a href="#" class="hover:text-pColor">Support <i class="fa-solid fa-angle-down"></i></a>
-              <ul class="absolute left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg">
+              <a href="#" class="hover:text-pColor" onclick="toggleSubmenu(event)">Support <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="absolute left-0 hidden group-hover:block bg-pColor lg:bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg">
                 <li class="relative group">
                   <a href="#" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white" onclick="toggleSubmenu(event)">o Multidisciplinary Clinic <i class="fa-solid fa-angle-right"></i></a>
-                  <ul class="absolute left-full top-0 hidden bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg">
+                  <ul class="absolute left-full top-0 hidden bg-pColor lg:bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-80 p-2 shadow-lg">
                     <li><a href="cure-sma-bd-about-multidisciplinary-clinic.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o About multidisciplinary Clinic</a></li>
                     <li><a href="cure-sma-bd-address-multidisciplinary-clinic.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o Address of multidisciplinary Clinic</a></li>
                     <li><a href="cure-sma-bd-picture-multidisciplinary-clinic.html" class="block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white">o Picture of multidisciplinary Clinic</a></li>
@@ -246,15 +253,16 @@
             
             
             <li class="relative group hover:translate-y-1 hover:duration-[2s] ">
-              <a href="#" class="hover:text-pColor">Gallery <i class="fa-solid fa-angle-down"></i></a>
-              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
+              <a href="#" class="hover:text-pColor" onclick="toggleSubmenu(event)">Gallery <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="absolute overflow-hidden left-0 hidden group-hover:block bg-pColor lg:bg-opacity-75 rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg">
                 <li><a href="cure-sma-bd-photos.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Photos</a></li>
                 <li><a href="cure-sma-bd-videos.html" class="block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white">o  Videos</a></li>
               </ul>
             </li>
-            <li class="relative group hover:translate-y-1 hover:duration-[2s] "><a href="cure-sma-bd-contact.html" class="hover:text-pColor">Contact </a></li>
+            <li class="relative group hover:translate-y-1 hover:duration-[2s] "><a href="cure-sma-bd-contact.html" class="hover:text-pColor" onclick="toggleSubmenu(event)">Contact </a></li>
           </ul>
         </div>
+
         <!-- button -->
         <div class="flex gap-4 lg:gap-1 xl:gap-4 2xl:gap-4">
             <div>
@@ -327,8 +335,8 @@
                         </div>
                         
                         <div class="flex flex-col md:flex-row gap-4 font-bold">
-                          <a href="privacy-policy-for-cure-sma-bd.html" class="text-sm text-blue-800 underline" target="_blank" >Privacy Policy</a>
-                          <a href="data-protection-for-cure-sma-bd.html" class="text-sm text-blue-800 underline" target="_blank" >Data Protection Statement</a>
+                          <a href="privacy-policy-for-cure-sma-bd.html"  target="_blank" class="text-sm text-blue-800 underline">Privacy Policy</a>
+                          <a href="data-protection-for-cure-sma-bd.html"  target="_blank" class="text-sm text-blue-800 underline">Data Protection Statement</a>
                         </div>
             
                         <div><h1 class="text-center mt-4">Captcha</h1></div>
