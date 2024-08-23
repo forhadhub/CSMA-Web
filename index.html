@@ -133,7 +133,7 @@
                         <li><a href="cure-sma-bd-executive-committee.html" class=" text-md my-1 block px-4 py-2 rounded-xl hover:bg-pColor hover:text-white border-b-2 border-white">o Executive Committee</a></li>
                     </ul>
                 </li>
-                <li><a href="cure-sma-bd-health-care-team.html" class="my-2 border-b-2 border-pColor text-lg hover:text-pColor">Health Care Team</a></li>
+                <li><a href="cure-sma-bd-health-care-team.html" class="my-2 border-b-2 border-pColor text-lg hover:text-pColor" onclick="toggleSubmenu(event)">Health Care Team</a></li>
                 <li class="relative group hover:translate-y-1 hover:duration-[2s]">
                     <a href="#" class="hover:text-pColor text-lg border-b-2 border-pColor " onclick="toggleSubmenu(event)">Care <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="absolute left-6 top-6 hidden bg-pColor rounded-md border-2 border-pColor text-white text-sm w-72 p-2 shadow-lg z-[2]">
@@ -164,7 +164,7 @@
                         <li><a href="cure-sma-bd-videos.html" class="my-1 text-md block rounded-xl px-4 py-2 hover:bg-pColor hover:text-white border-b-2 border-white">o Videos</a></li>
                     </ul>
                 </li>
-                <li><a href="cure-sma-bd-contact.html" class="text-lg relative group hover:translate-y-1 hover:duration-[2s] text-lg hover:text-pColor">Contact</a></li>
+                <li><a href="cure-sma-bd-contact.html" class="text-lg relative group hover:translate-y-1 hover:duration-[2s] text-lg hover:text-pColor" onclick="toggleSubmenu(event)">Contact</a></li>
             </ul>
           </div>
           
@@ -432,22 +432,22 @@
           </div>
     
           <div class="flex flex-col sm:flex-row sm:justify-between gap-6 sm:gap-10">
-            <div class="bg-white w-full sm:w-1/3 hover:bg-yellow-100 hover:drop-shadow-2xl" style="box-shadow: 4px 4px 8px rgba(10, 214, 3, 0.350), -4px -4px 8px rgba(10, 214, 3, 0.350)">
-              <img src="./src/images/dif_image_1.png" alt="Sponsor a child" class="w-full h-auto">
+            <div class="bg-white w-full hover:bg-yellow-100 hover:drop-shadow-2xl" style="box-shadow: 4px 4px 8px rgba(10, 214, 3, 0.350), -4px -4px 8px rgba(10, 214, 3, 0.350)">
+              <img src="./src/images/photo1.jpg" alt="Sponsor a child" class="w-full h-auto">
               <div class="px-8 text-center my-8">
                 <a href="" class="text-xl lg:text-2xl leading-8 text-pColor hover:underline">SMA patient stories are powerful narratives of resilience,  perseverance, and hope. These individuals <span class="font-bold text-4xl font-light"> >> </span> </a>
               </div>
             </div>
     
-            <div class="bg-white w-full sm:w-1/3 hover:bg-yellow-100 hover:drop-shadow-2xl" style="box-shadow: 4px 4px 8px rgba(10, 214, 3, 0.350), -4px -4px 8px rgba(10, 214, 3, 0.350)">
-              <img src="./src/images/dif_image_1.png" alt="Cure SMA Bangladesh" class="w-full h-auto">
+            <div class="bg-white w-full hover:bg-yellow-100 hover:drop-shadow-2xl" style="box-shadow: 4px 4px 8px rgba(10, 214, 3, 0.350), -4px -4px 8px rgba(10, 214, 3, 0.350)">
+              <img src="./src/images/photo2.png" alt="Cure SMA Bangladesh" class="w-full h-auto">
               <div class="px-8 text-center my-8">
                 <a href="" class="text-xl lg:text-2xl leading-8 text-pColor hover:underline">SMA patient stories are powerful narratives of resilience,  perseverance, and hope. These individuals <span class="font-bold text-4xl font-light"> >> </span> </a>
               </div>
             </div>
     
-            <div class="bg-white w-full sm:w-1/3 hover:bg-yellow-100 hover:drop-shadow-2xl" style="box-shadow: 4px 4px 8px rgba(10, 214, 3, 0.350), -4px -4px 8px rgba(10, 214, 3, 0.350)">
-              <img src="./src/images/dif_image_1.png" alt="Cure SMA Bangladesh" class="w-full h-auto">
+            <div class="bg-white w-full hover:bg-yellow-100 hover:drop-shadow-2xl" style="box-shadow: 4px 4px 8px rgba(10, 214, 3, 0.350), -4px -4px 8px rgba(10, 214, 3, 0.350)">
+              <img src="./src/images/photo3.jpg" alt="Cure SMA Bangladesh" class="w-full h-auto">
               <div class="px-8 text-center my-8">
                 <a href="" class="text-xl lg:text-2xl leading-8 text-pColor hover:underline">SMA patient stories are powerful narratives of resilience,  perseverance, and hope. These individuals <span class="font-bold text-4xl font-light"> >> </span> </a>
               </div>
@@ -467,61 +467,57 @@
         <h1 class="text-center text-2xl lg:text-4xl font-bold underline">Recent Blogs</h1>
       </div>
   
-      <div id="child_Section" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-14 mb-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-14 mb-10">
         <!-- news cart 1 -->
         <div class="rounded-tr-[50px] rounded-bl-[50px] drop-shadow-xl bg-pColor/10 hover:bg-[#F2F2F3] hover:border-2 hover:border-pColor">
-            <div>
-              <img class="w-full lg:w-[800px] h-[220px] lg:h-[300px] xl:h-[220px] overflow-hidden rounded-tr-[50px]" src="./src/images/dif_image_1.png" alt="Cure SMA Bangladesh" />
-            </div>
-            <div class="p-4">
-              <p class="italic text-sm ">January 30, 2024</p>
-              <p class="italic text-sm ">Posting Category: <a href="#" class="text-pColor underline">Events</a></p>
-              <h2 class="text-2xl font-bold py-2 text-pColor text-justify hover:underline"><a href="blog_single.html">Let's Organize, resist and be aware about SMA</a></h2>
-              <a href="#" class="text-base leading-relaxed">Little angel OLIVIA SANCHAREE NABONEE suffering from SMA needs support to continue her treatment</a>
-              <h4 class="text-right "><a href="#" class="text-pColor hover:underline text-xl lg:text-2xl">Read More > </a></h4>
-              
-            </div>
+          <div>
+            <img class="w-full overflow-hidden rounded-tr-[50px]" src="./src/images/1. Multidisciplinary Clinic.jpg" alt="Cure SMA Bangladesh" />
+          </div>
+          <div class="p-4">
+            <p class="italic text-sm lg:text-base">January 30, 2024</p>
+            <p class="italic text-sm lg:text-base">Posting Category: <a href="#" class="text-pColor underline">Events</a></p>
+            <h2 class="text-2xl font-bold py-2 text-pColor text-justify hover:underline"><a href="blog_single.html">Let's Organize, resist and be aware about SMA</a></h2>
+            <a href="#" class="text-base leading-relaxed">Little angel OLIVIA SANCHAREE NABONEE suffering from SMA needs support to continue her treatment</a>
+            <h4 class="text-right "><a href="#" class="text-pColor hover:underline text-xl lg:text-2xl">Read More > </a></h4>            
+          </div>
         </div>
         <!-- news cart 2 -->
         <div class="rounded-tr-[50px] rounded-bl-[50px] drop-shadow-xl bg-pColor/10 hover:bg-[#F2F2F3] hover:border-2 hover:border-pColor">
           <div>
-            <img class="w-full lg:w-[800px] h-[220px] lg:h-[300px] xl:h-[220px] overflow-hidden rounded-tr-[50px]" src="./src/images/dif_image_1.png" alt="Cure SMA Bangladesh" />
+            <img class="w-full overflow-hidden rounded-tr-[50px]" src="./src/images/1. Multidisciplinary Clinic.jpg" alt="Cure SMA Bangladesh" />
           </div>
           <div class="p-4">
-            <p class="italic text-sm ">January 30, 2024</p>
-            <p class="italic text-sm ">Posting Category: <a href="#" class="text-pColor underline">Events</a></p>
+            <p class="italic text-sm lg:text-base">January 30, 2024</p>
+            <p class="italic text-sm lg:text-base">Posting Category: <a href="#" class="text-pColor underline">Events</a></p>
             <h2 class="text-2xl font-bold py-2 text-pColor text-justify hover:underline"><a href="blog_single.html">Let's Organize, resist and be aware about SMA</a></h2>
             <a href="#" class="text-base leading-relaxed">Little angel OLIVIA SANCHAREE NABONEE suffering from SMA needs support to continue her treatment</a>
-            <h4 class="text-right "><a href="#" class="text-pColor hover:underline text-xl lg:text-2xl">Read More > </a></h4>
-            
+            <h4 class="text-right "><a href="#" class="text-pColor hover:underline text-xl lg:text-2xl">Read More > </a></h4>            
           </div>
         </div>
         <!-- news cart 3 -->
         <div class="rounded-tr-[50px] rounded-bl-[50px] drop-shadow-xl bg-pColor/10 hover:bg-[#F2F2F3] hover:border-2 hover:border-pColor">
           <div>
-            <img class="w-full lg:w-[800px] h-[220px] lg:h-[300px] xl:h-[220px] overflow-hidden rounded-tr-[50px]" src="./src/images/dif_image_1.png" alt="Cure SMA Bangladesh"/>
+            <img class="w-full overflow-hidden rounded-tr-[50px]" src="./src/images/1. Multidisciplinary Clinic.jpg" alt="Cure SMA Bangladesh" />
           </div>
           <div class="p-4">
-            <p class="italic text-sm ">January 30, 2024</p>
-            <p class="italic text-sm ">Posting Category: <a href="#" class="text-pColor underline">Events</a></p>
+            <p class="italic text-sm lg:text-base">January 30, 2024</p>
+            <p class="italic text-sm lg:text-base">Posting Category: <a href="#" class="text-pColor underline">Events</a></p>
             <h2 class="text-2xl font-bold py-2 text-pColor text-justify hover:underline"><a href="blog_single.html">Let's Organize, resist and be aware about SMA</a></h2>
             <a href="#" class="text-base leading-relaxed">Little angel OLIVIA SANCHAREE NABONEE suffering from SMA needs support to continue her treatment</a>
-            <h4 class="text-right "><a href="#" class="text-pColor hover:underline text-xl lg:text-2xl">Read More > </a></h4>
-            
+            <h4 class="text-right "><a href="#" class="text-pColor hover:underline text-xl lg:text-2xl">Read More > </a></h4>            
           </div>
         </div>
         <!-- news cart 4 -->
         <div class="rounded-tr-[50px] rounded-bl-[50px] drop-shadow-xl bg-pColor/10 hover:bg-[#F2F2F3] hover:border-2 hover:border-pColor">
           <div>
-            <img class="w-full lg:w-[800px] h-[220px] lg:h-[300px] xl:h-[220px] overflow-hidden rounded-tr-[50px]" src="./src/images/dif_image_1.png" alt="Cure SMA Bangladesh"/>
+            <img class="w-full overflow-hidden rounded-tr-[50px]" src="./src/images/1. Multidisciplinary Clinic.jpg" alt="Cure SMA Bangladesh" />
           </div>
           <div class="p-4">
-            <p class="italic text-sm ">January 30, 2024</p>
-            <p class="italic text-sm ">Posting Category: <a href="#" class="text-pColor underline">Events</a></p>
+            <p class="italic text-sm lg:text-base">January 30, 2024</p>
+            <p class="italic text-sm lg:text-base">Posting Category: <a href="#" class="text-pColor underline">Events</a></p>
             <h2 class="text-2xl font-bold py-2 text-pColor text-justify hover:underline"><a href="blog_single.html">Let's Organize, resist and be aware about SMA</a></h2>
             <a href="#" class="text-base leading-relaxed">Little angel OLIVIA SANCHAREE NABONEE suffering from SMA needs support to continue her treatment</a>
-            <h4 class="text-right "><a href="#" class="text-pColor hover:underline text-xl lg:text-2xl">Read More > </a></h4>
-            
+            <h4 class="text-right "><a href="#" class="text-pColor hover:underline text-xl lg:text-2xl">Read More > </a></h4>            
           </div>
         </div>
       </div>
